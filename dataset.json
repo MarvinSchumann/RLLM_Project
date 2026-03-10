@@ -9,8 +9,8 @@
     "question": "Count the vowels in the string: oihjsahsaud",
     "answer": "5"
   },
-  {
-    "type": "countVowels",
+  { 
+   "type": "countVowels",
     "question": "Count the vowels in the string: aufnbejtkfi",
     "answer": "4"
   },
