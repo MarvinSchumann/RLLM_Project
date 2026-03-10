@@ -1,12 +1,91 @@
 [
   {
-    "type": "",
-    "question": "",
-    "answer": ""
+    "type": "countVowels",
+    "question": "Count the vowels in the string: dgfdsfhuipoai",
+    "answer": "5"
   },
   {
+    "type": "countVowels",
+    "question": "Count the vowels in the string: oihjsahsaud",
+    "answer": "5"
+  },
+  {
+    "type": "countVowels",
+    "question": "Count the vowels in the string: aufnbejtkfi",
+    "answer": "4"
+  },
+  {
+    "type": "countVowels",
+    "question": "Count the vowels in the string: hkhgfdhybnijg",
+    "answer": "1"
+  },
+  
+  {
+    "type": "countConsonants",
+    "question": "Count the Consonants in the string: hgrwopjuia",
+    "answer": "6"
+  },
+  {
+    "type": "countConsonants",
+    "question": "Count the Consonants in the string: aaathqehsdjqiuw",
+    "answer": "9"
+  },
+    {
+    "type": "countConsonants",
+    "question": "Count the Consonants in the string: auibuauioa",
+    "answer": "1"
+  },
+   {
+    "type": "countConsonants",
+    "question": "Count the Consonants in the string: unfallversicherung",
+    "answer": "12"
+  },
+  
+  {
+    "type": "isNumberOfCharactersEven",
+    "question": "Is the number of characters even in the string: huweh??_.113cx",
+    "answer": "yes"
+  },
+  {
+    "type": "isNumberOfCharactersEven",
+    "question": "Is the number of characters even in the string: d___?%&(5jdfhsd//c§&hdhsadu/a/§_§/hdfjsdfkzeruewr834374/2362364yes"
+    "answer": "yes"
+  },
+  {
+    "type": "isNumberOfCharactersEven",
+    "question": "Is the number of characters even in the string: no"
+    "answer": "yes"
+  },
+  {
+    "type": "isNumberOfCharactersEven",
+    "question": "Is the number of characters even in the string: 8459329458348349dfdsfhdsf"
+    "answer": "no"
+  },
+  
+  {
+    "type": "completeSequence",
+    "question": "What character comes next in the following sequence? : ABCABCABCABCAB"
+    "answer": "C"
+  },
+  {
+    "type": "completeSequence",
+    "question": "What number comes next in the following sequence? : 16 8 12 6 10 5"
+    "answer": "9"
+  },
+  {
+    "type": "completeSequence",
+    "question": "What character comes next in the following sequence? : ACEGIK"
+    "answer": "M"
+  },
+  {
+    "type": "completeSequence",
+    "question": "What number comes next in the following sequence? : 2 4 8 16 32 64 128 256 512 1024"
+    "answer": "2048"
+  },
+  
+  {
     "type": "",
-    "question": "",
+    "question": ""
     "answer": ""
-  }
+  },
 ]
