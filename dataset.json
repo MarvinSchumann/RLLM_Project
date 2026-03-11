@@ -339,6 +339,32 @@
 
   {
     "id": "53",
+    "type": "hiddenWords",
+    "question": "What word is hidden here? : W?E?L?C?O?M?E",
+    "answer": "WELCOME"
+  },
+  {
+    "id": "54",
+    "type": "hiddenWords",
+    "question": "What word is hidden here? : H22I22D22D22E22N",
+    "answer": "HIDDEN"
+  },
+  {
+    "id": "55",
+    "type": "hiddenWords",
+    "question": "What word is hidden here? : CH4RI4ST4MA4S",
+    "answer": "CHRISTMAS"
+  },
+  {
+    "id": "56",
+    "type": "hiddenWords",
+    "question": "What word is hidden here? : SCCCHCOCOCL",
+    "answer": "HIDDEN"
+  },
+
+
+  {
+    "id": "57",
     "type": "",
     "question": "",
     "answer": ""
