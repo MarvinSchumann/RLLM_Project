@@ -231,4 +231,30 @@
     "question": "Imagine a chessboard, you are white and your king is on c3, what tile do you cross to get to e1 in two moves?",
     "answer": "d2"
   },
+
+
+  {
+    "id": "37",
+    "type": "oddOneOut",
+    "question": "What does not fit in the group: (A, E, O, T, U)",
+    "answer": "T"
+  },
+  {
+    "id": "38",
+    "type": "oddOneOut",
+    "question": "What does not fit in the group: (14, 2, 200, 5, 10)",
+    "answer": "5"
+  },
+  {
+    "id": "39",
+    "type": "oddOneOut",
+    "question": "What does not fit in the group: (Tom, Mary, Lisa, Luke, Lois)",
+    "answer": "Tom"
+  },
+  {
+    "id": "40",
+    "type": "oddOneOut",
+    "question": "What does not fit in the group: (Apple, Lemon, Cashew, Orange, Banana)",
+    "answer": "Cashew"
+  },
 ]
