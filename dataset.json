@@ -286,9 +286,61 @@
 
 
   {
-    "id": "44",
-    "type": "shapes",
-    "question": "Into how many different sections can you split an octagon with 1 line?",
-    "answer": "2"
+    "id": "45",
+    "type": "combineNumbers",
+    "question": "How many different numbers can you create by combining the digits 1, 2 and 3. You can use digits more than once",
+    "answer": "27"
+  },
+  {
+    "id": "46",
+    "type": "combineNumbers",
+    "question": "How many different numbers can you create by combining the digits 5, 7 and 9. You can use each digit only once",
+    "answer": "6"
+  },
+  {
+    "id": "47",
+    "type": "combineNumbers",
+    "question": "How many different numbers can you create by combining the digits 1, 2, 3 and 4. You can use digits more than once",
+    "answer": "256"
+  },
+  {
+    "id": "48",
+    "type": "combineNumbers",
+    "question": "How many different numbers can you create by combining the digits 1, 2, 3, 4 and 5. You can use each digit only once",
+    "answer": "120"
+  },
+
+
+  {
+    "id": "49",
+    "type": "logicPuzzle",
+    "question": "There are three humans in a line, Tom, Lisa and Mary. Tom is next to Lisa. Mary is next to Lisa. Who is in the middle?",
+    "answer": "Lisa"
+  },
+  {
+    "id": "50",
+    "type": "logicPuzzle",
+    "question": "There are four humans in a line, Tom, Lisa, Mark and Mary. Lisa is next to only one person. Mary is only next to Mark. Who is between Mark and Lisa?",
+    "answer": "Tom"
+  },
+  {
+    "id": "51",
+    "type": "logicPuzzle",
+    "question": "There are four humans in a line, Tom, Lisa, Mark and Mary. Lisa and Mary are next to two humans each. Mark is next to Lisa. Who is next to Mary?",
+    "answer": "Tom"
+  },
+  {
+    "id": "52",
+    "type": "logicPuzzle",
+    "question": "There are three humans in a line, Tom, Lisa and Mary. Mary and Lisa are not next to eachother. Who is in the middle?",
+    "answer": "Tom"
+  },
+
+
+  {
+    "id": "53",
+    "type": "",
+    "question": "",
+    "answer": ""
   },
 ]
