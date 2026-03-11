@@ -257,4 +257,38 @@
     "question": "What does not fit in the group: (Apple, Lemon, Cashew, Orange, Banana)",
     "answer": "Cashew"
   },
+
+
+  {
+    "id": "41",
+    "type": "shapes",
+    "question": "If you put a triangle on a square, both shapes have the same lenghts on all sides and as each other. How many corners does the new shape have?",
+    "answer": "5"
+  },
+  {
+    "id": "42",
+    "type": "shapes",
+    "question": "Imagine a isosceles triangle, with the tip facing up and a circle below it. How many corners do you see?",
+    "answer": "3"
+  },
+  {
+    "id": "43",
+    "type": "shapes",
+    "question": "How many seperated sections do you get at most when overlapping 2 circles",
+    "answer": "3"
+  },
+  {
+    "id": "44",
+    "type": "shapes",
+    "question": "Into how many different sections can you split an octagon with 1 line?",
+    "answer": "2"
+  },
+
+
+  {
+    "id": "44",
+    "type": "shapes",
+    "question": "Into how many different sections can you split an octagon with 1 line?",
+    "answer": "2"
+  },
 ]
