@@ -387,4 +387,30 @@
     "question": "How many words in this sentence have more than two letters?",
     "answer": "10"
   },
+
+
+  {
+    "id": "61",
+    "type": "wordPositions",
+    "question": "What word, in this sentence is after the comma?",
+    "answer": "in"
+  },
+  {
+    "id": "62",
+    "type": "wordPositions",
+    "question": "What word in this sentence is in the second to last position?",
+    "answer": "last"
+  },
+  {
+    "id": "63",
+    "type": "wordPositions",
+    "question": "What word, in this sentence comes in ninth position?",
+    "answer": "position"
+  },
+  {
+    "id": "64",
+    "type": "wordPositions",
+    "question": "Give the digit of the position, that the longest word in this string of words is at?",
+    "answer": "6"
+  },
 ]
