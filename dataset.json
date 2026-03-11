@@ -365,8 +365,26 @@
 
   {
     "id": "57",
-    "type": "",
-    "question": "",
-    "answer": ""
+    "type": "countWords",
+    "question": "How many words in this sentence have three or less letters?",
+    "answer": "3"
+  },
+  {
+    "id": "58",
+    "type": "countWords",
+    "question": "How many words are in this sentence, including this part after the comma?",
+    "answer": "13"
+  },
+  {
+    "id": "59",
+    "type": "countWords",
+    "question": "How many words in this sentence start with the letter thats after m in the alphabet?",
+    "answer": "0"
+  },
+  {
+    "id": "60",
+    "type": "countWords",
+    "question": "How many words in this sentence have more than two letters?",
+    "answer": "10"
   },
 ]
