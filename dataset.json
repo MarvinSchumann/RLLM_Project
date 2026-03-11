@@ -1,20 +1,24 @@
 [
   {
+    "id": "1",
     "type": "countVowels",
     "question": "Count the vowels in the string: dgfdsfhuipoai",
     "answer": "5"
   },
   {
+    "id": "2",
     "type": "countVowels",
     "question": "Count the vowels in the string: oihjsahsaud",
     "answer": "5"
   },
   { 
-   "type": "countVowels",
+    "id": "3",
+    "type": "countVowels",
     "question": "Count the vowels in the string: aufnbejtkfi",
     "answer": "4"
   },
   {
+    "id": "4",
     "type": "countVowels",
     "question": "Count the vowels in the string: hkhgfdhybnijg",
     "answer": "1"
@@ -22,21 +26,25 @@
 
   
   {
+    "id": "5",
     "type": "countConsonants",
     "question": "Count the Consonants in the string: hgrwopjuia",
     "answer": "6"
   },
   {
+    "id": "6",
     "type": "countConsonants",
     "question": "Count the Consonants in the string: aaathqehsdjqiuw",
     "answer": "9"
   },
-    {
+  {
+    "id": "7",
     "type": "countConsonants",
     "question": "Count the Consonants in the string: auibuauioa",
     "answer": "1"
   },
-   {
+  {
+    "id": "8",
     "type": "countConsonants",
     "question": "Count the Consonants in the string: unfallversicherung",
     "answer": "12"
@@ -44,21 +52,25 @@
 
   
   {
+    "id": "9",
     "type": "isNumberOfCharactersEven",
     "question": "Is the number of characters even in the string: huweh??_.113cx",
     "answer": "yes"
   },
   {
+    "id": "10",
     "type": "isNumberOfCharactersEven",
     "question": "Is the number of characters even in the string: d___?%&(5jdfhsd//c§&hdhsadu/a/§_§/hdfjsdfkzeruewr834374/2362364yes",
     "answer": "yes"
   },
   {
+    "id": "11",
     "type": "isNumberOfCharactersEven",
     "question": "Is the number of characters even in the string: no",
     "answer": "yes"
   },
   {
+    "id": "12",
     "type": "isNumberOfCharactersEven",
     "question": "Is the number of characters even in the string: 8459329458348349dfdsfhdsf",
     "answer": "no"
@@ -66,21 +78,25 @@
 
   
   {
+    "id": "13",
     "type": "completeSequence",
     "question": "What character comes next in the following sequence? : ABCABCABCABCAB",
     "answer": "C"
   },
   {
+    "id": "14",
     "type": "completeSequence",
     "question": "What number comes next in the following sequence? : 16 8 12 6 10 5",
     "answer": "9"
   },
   {
+    "id": "15",
     "type": "completeSequence",
     "question": "What character comes next in the following sequence? : ACEGIK",
     "answer": "M"
   },
   {
+    "id": "16",
     "type": "completeSequence",
     "question": "What number comes next in the following sequence? : 2 4 8 16 32 64 128 256 512 1024",
     "answer": "2048"
@@ -88,21 +104,25 @@
 
   
   {
+    "id": "17",
     "type": "pathFinding",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,B),(B,D),(B,E),(C,E)). Give the sequence of nodes to get from B to C in the format {node1, node2, node3, ...}",
     "answer": "{B, E, C}"
   },
   {
+    "id": "18",
     "type": "pathFinding",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,B),(B,C),(C,D),(D,E)). Give the sequence of nodes to get from A to D in the format {node1, node2, node3, ...}",
     "answer": "{A, B, C, D}"
   },
   {
+    "id": "19",
     "type": "pathFinding",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,A),(A,D),(B,E),(D,E)). Give the sequence of nodes to get from A to B in the format {node1, node2, node3, ...}",
     "answer": "{A, D, E, B}"
   },
   {
+    "id": "20",
     "type": "pathFinding",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,B),(A,C),(A,D),(A,E)). Give the sequence of nodes to get from A to C in the format {node1, node2, node3, ...}",
     "answer": "{A, C}"
@@ -110,21 +130,25 @@
 
   
   {
+    "id": "21",
     "type": "doesPathExist",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,B),(A,D),(B,D),(C,E),(D,F),(F,G)). Does a Path from A to E exist?",
     "answer": "no"
   },
   {
+    "id": "22",
     "type": "doesPathExist",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,C),(A,E),(B,E),(C,G),(D,F),(D,G)). Does a Path from A to F exist?",
     "answer": "yes"
   },
   {
+    "id": "23",
     "type": "doesPathExist",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,C),(A,D),(C,D),(C,E),(D,G),(F,G)). Does a Path from E to B exist?",
     "answer": "no"
   },
   {
+    "id": "24",
     "type": "doesPathExist",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,C),(B,C),(C,D),(C,E),(D,F)). Does a Path from B to F exist?",
     "answer": "yes"
@@ -132,21 +156,25 @@
 
 
   {
+    "id": "25",
     "type": "countNodes",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,C),(B,C),(C,D),(C,E),(D,F)). How many nodes, including start and finish do you pass when going from B to F",
     "answer": "4"
   },
-    {
+  {
+    "id": "26",
     "type": "countNodes",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,G),(B,D),(C,D),(C,E),(D,G)). How many nodes, including start and finish do you pass when going from A to E",
     "answer": "5"
   },
-    {
+  {
+    "id": "27",
     "type": "countNodes",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,E),(B,C),(C,E),(D,E),(F,G)). How many nodes, including start and finish do you pass when going from F to G",
     "answer": "2"
   },
   {
+    "id": "28",
     "type": "countNodes",
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,A),(B,C),(C,E),(D,E),(F,G)). How many nodes, including start and finish do you pass when going from A to A",
     "answer": "1"
