@@ -205,4 +205,30 @@
     "question": "Imagine a chessboard, you are white and your knight is on e4, you move forward two tiles and on the the right, then two backwards and one to the left, what tile is it on?",
     "answer": "e4"
   },
+
+
+  {
+    "id": "33",
+    "type": "chess2",
+    "question": "Imagine a chessboard, you are white and your knight is on a4, what tile do you cross to get to e6 in two moves?",
+    "answer": "c5"
+  },
+  {
+    "id": "34",
+    "type": "chess2",
+    "question": "Imagine a chessboard, you are white and your pawn is on d4, what tile do you cross to get to d6 in two moves?",
+    "answer": "d5"
+  },
+  {
+    "id": "35",
+    "type": "chess2",
+    "question": "Imagine a chessboard, you are white and your bishop is on h1, what tile do you cross to get to g6 in two moves?",
+    "answer": "e4"
+  },
+  {
+    "id": "36",
+    "type": "chess2",
+    "question": "Imagine a chessboard, you are white and your king is on c3, what tile do you cross to get to e1 in two moves?",
+    "answer": "d2"
+  },
 ]
