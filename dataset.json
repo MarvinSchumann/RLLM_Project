@@ -413,4 +413,30 @@
     "question": "Give the digit of the position, that the longest word in this string of words is at?",
     "answer": "6"
   },
+
+
+  {
+    "id": "65",
+    "type": "shapePosition",
+    "question": "There is a yellow triangle, below it is a red object. To the right of the red object is a blue circle. What is above the red object?",
+    "answer": "yellow triangle"
+  },
+  {
+    "id": "66",
+    "type": "shapePosition",
+    "question": "There is a yellow triangle, below it is a red object. To the right of the red object is a blue circle. To the right of the yellow triangle is a green square. What is below the green square?",
+    "answer": "blue circle"
+  },
+  {
+    "id": "67",
+    "type": "shapePosition",
+    "question": "There is a yellow triangle, below it is a red object. To the right of the red object is a blue circle. To the right of the blue circle is a green circle. What is between the green circle and red object?",
+    "answer": "blue circle"
+  },
+  {
+    "id": "68",
+    "type": "shapePosition",
+    "question": "There is a yellow triangle, below it is a red object. To the right of the red object is a blue circle. The blue circle is only next to a square. What shape is the red object?",
+    "answer": "square"
+  },
 ]
