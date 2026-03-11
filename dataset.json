@@ -179,4 +179,30 @@
     "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,A),(B,C),(C,E),(D,E),(F,G)). How many nodes, including start and finish do you pass when going from A to A",
     "answer": "1"
   },
+
+
+  {
+    "id": "29",
+    "type": "chess1",
+    "question": "Imagine a chessboard, you are white and your pawn is on c3, you move forward three times, what tile is it on?",
+    "answer": "c6"
+  },
+  {
+    "id": "30",
+    "type": "chess1",
+    "question": "Imagine a chessboard, you are white and your knight is on f2, you move two tiles up and one to the left two times, what tile is it on?",
+    "answer": "d6"
+  },
+  {
+    "id": "31",
+    "type": "chess1",
+    "question": "Imagine a chessboard, you are black and your king is on b5, you move forward three times, twice to the left and backwards once, what tile is it on?",
+    "answer": "d3"
+  },
+  {
+    "id": "32",
+    "type": "chess1",
+    "question": "Imagine a chessboard, you are white and your knight is on e4, you move forward two tiles and on the the right, then two backwards and one to the left, what tile is it on?",
+    "answer": "e4"
+  },
 ]
