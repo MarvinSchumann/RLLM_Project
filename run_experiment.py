@@ -90,7 +90,7 @@ def run():
 
         result= {
             "id":task["id"],
-            "task_type": task.get("task_type"),
+            "type": task.get("type"),
             "question": question,
             "ground_truth": answer,
             "model": MODEL,

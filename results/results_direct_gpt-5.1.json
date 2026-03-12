@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "task_type": null,
+    "question": "Count the vowels in the string: dgfdsfhuipoai",
+    "ground_truth": "5",
+    "model": "gpt-5.1",
+    "strategy": "direct",
+    "raw_output": "5",
+    "parsed_prediction": "5",
+    "correct": true,
+    "latency": 1.9626481533050537
+  },
+  {
+    "id": "2",
+    "task_type": null,
+    "question": "Count the vowels in the string: oihjsahsaud",
+    "ground_truth": "5",
+    "model": "gpt-5.1",
+    "strategy": "direct",
+    "raw_output": "6",
+    "parsed_prediction": "6",
+    "correct": false,
+    "latency": 1.649022102355957
+  },
+  {
+    "id": "3",
+    "task_type": null,
+    "question": "Count the vowels in the string: aufnbejtkfi",
+    "ground_truth": "4",
+    "model": "gpt-5.1",
+    "strategy": "direct",
+    "raw_output": "3",
+    "parsed_prediction": "3",
+    "correct": false,
+    "latency": 1.7855522632598877
+  },
+  {
+    "id": "4",
+    "task_type": null,
+    "question": "Count the vowels in the string: hkhgfdhybnijg",
+    "ground_truth": "1",
+    "model": "gpt-5.1",
+    "strategy": "direct",
+    "raw_output": "1",
+    "parsed_prediction": "1",
+    "correct": true,
+    "latency": 1.7911810874938965
+  },
+  {
+    "id": "5",
+    "task_type": null,
+    "question": "Count the Consonants in the string: hgrwopjuia",
+    "ground_truth": "6",
+    "model": "gpt-5.1",
+    "strategy": "direct",
+    "raw_output": "7",
+    "parsed_prediction": "7",
+    "correct": false,
+    "latency": 1.4317848682403564
+  }
+]
