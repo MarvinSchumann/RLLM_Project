@@ -7,7 +7,7 @@ from openai import OpenAI
 MODEL = "gpt-5.1"
 STRATEGY = "direct"
 RESULT_PATH = "results/results_direct_gpt-5.1.json"
-DATASET_PATH = "data/dataset.json"
+DATASET_PATH = "data/test_dataset.json"
 
 TEMPERATURE = 0
 
@@ -111,4 +111,7 @@ def run():
     with open(RESULT_PATH, "w") as f:
         json.dump(results,f,indent=2)
     print("done!")
-            
+
+
+if __name__ == "__main__":
+    run()
