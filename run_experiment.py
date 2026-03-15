@@ -5,9 +5,9 @@ from openai import OpenAI
 
 #CONFIG
 MODEL = "gpt-5.1"
-STRATEGY = "direct"
-RESULT_PATH = "results/results_direct_gpt-5.1.json"
-DATASET_PATH = "data/test_dataset.json"
+STRATEGY = "cot"
+RESULT_PATH = "results/results_cot_gpt-5.1.json"
+DATASET_PATH = "data/dataset.json"
 
 TEMPERATURE = 0
 
@@ -16,7 +16,7 @@ client = OpenAI()
 
 #--------------------------------------------------
 #Prompt Builder
-def build_promt(question, strategy = "direct"):
+def build_promt(question, strategy = "cot"):
     if strategy == "direct":
         return f"""
 Solve the following task.
@@ -33,7 +33,7 @@ Solve the following reasoning task step by step.
 Question:
 {question}
 
-Lets think step by step.
+Lets think step by step. Make sure the last word is the result. 
 """
     else: raise ValueError("Unknown strategy")
 #--------------------------------------------------
