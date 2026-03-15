@@ -1,17 +1,24 @@
 import json
 import time
 import re
+import os
+from collections import Counter
 from openai import OpenAI
 
-#CONFIG
-MODEL = "gpt-4o-mini"
-STRATEGY = "direct"
-RESULT_PATH = "results/results_direct_gpt-40-mini.json"
+# ----------------------------------
+# CONFIG
+# ----------------------------------
+
+MODEL = "gpt-5.1"
+STRATEGY = "self_consistency"   # options: "direct", "cot", "self_consistency"
 DATASET_PATH = "data/dataset.json"
+RESULT_PATH = "results_self_consistency-gpt-5.1.json"
 
 TEMPERATURE = 0
+SELF_CONSISTENCY_RUNS = 10
 
-#OpenAI_Client
+# OpenAI Client
+
 client = OpenAI()
 
 #--------------------------------------------------
@@ -38,7 +45,10 @@ Lets think step by step. Make sure the last word is the result.
     else: raise ValueError("Unknown strategy")
 #--------------------------------------------------
 
-#Call Model 
+# ----------------------------------
+# Call Model
+# ----------------------------------
+
 def ask_model(prompt):
     response = client.responses.create(
         model = MODEL,
@@ -46,6 +56,11 @@ def ask_model(prompt):
         input = prompt
     )
     return response.output_text
+
+
+# ----------------------------------
+# Parse Prediction
+# ----------------------------------
 
 #Parse Prediction
 def parse_prediction(text):
@@ -61,57 +76,118 @@ def parse_prediction(text):
     return text
 
 #-------------------------------------------------------------
-#Main Experiment:
+
+
+# Self-Consistency
+def ask_self_consistency(question, runs=SELF_CONSISTENCY_RUNS):
+    raw_outputs = []
+    predictions = []
+
+    for i in range(runs):
+        prompt = build_promt(question, "cot")
+
+        try:
+            raw_output = ask_model(prompt)
+        except Exception as e:
+            print(f"API error in self-consistency run {i+1}: {e}")
+            raw_output = None
+
+        prediction = parse_prediction(raw_output)
+
+        raw_outputs.append(raw_output)
+        predictions.append(prediction)
+
+        time.sleep(0.2)
+
+    valid_predictions = [p for p in predictions if p is not None]
+
+    if not valid_predictions:
+        final_prediction = None
+    else:
+        counter = Counter(valid_predictions)
+        final_prediction = counter.most_common(1)[0][0]
+
+    return {
+        "final_prediction": final_prediction,
+        "all_predictions": predictions,
+        "all_raw_outputs": raw_outputs
+    }
+
+# Main Experiment
 
 def run():
     print("Loading dataset...")
+
     with open(DATASET_PATH, "r") as f:
         dataset = json.load(f)
 
     results = []
-    
+
     for task in dataset:
         question = task["question"]
         answer = str(task["answer"])
 
-        promt = build_promt(question, STRATEGY)
-        print(f"Running task{task['id']}")
+        print(f"Running task {task['id']}")
+
         start = time.time()
 
-        try:
-            raw_output = ask_model(promt)
-        except Exception as e:
-            print("API error:", e)
+        if STRATEGY == "self_consistency":
+            sc_result = ask_self_consistency(question, runs=SELF_CONSISTENCY_RUNS)
+
             raw_output = None
+            prediction = sc_result["final_prediction"]
+            all_predictions = sc_result["all_predictions"]
+            all_raw_outputs = sc_result["all_raw_outputs"]
+
+        else:
+            prompt = build_promt(question, STRATEGY)
+
+            try:
+                raw_output = ask_model(prompt)
+            except Exception as e:
+                print("API error:", e)
+                raw_output = None
+
+            prediction = parse_prediction(raw_output)
+            all_predictions = None
+            all_raw_outputs = None
+
+            time.sleep(0.2)
 
         latency = time.time() - start
-        prediction = parse_prediction(raw_output)
         correct = prediction == answer
 
-        result= {
-            "id":task["id"],
-            "type": task.get("type"),
+        result = {
+            "id": task["id"],
+            "task_type": task.get("task_type"),
             "question": question,
             "ground_truth": answer,
             "model": MODEL,
             "strategy": STRATEGY,
+            "temperature": TEMPERATURE,
             "raw_output": raw_output,
             "parsed_prediction": prediction,
             "correct": correct,
             "latency": latency
         }
 
+        if STRATEGY == "self_consistency":
+            result["self_consistency_runs"] = SELF_CONSISTENCY_RUNS
+            result["all_predictions"] = all_predictions
+            result["all_raw_outputs"] = all_raw_outputs
+
         results.append(result)
 
-        #small time break to prevent rate limits:
-        time.sleep(0.2)
-    
     print("Saving results...")
 
-    with open(RESULT_PATH, "w") as f:
-        json.dump(results,f,indent=2)
-    print("done!")
+    os.makedirs("results", exist_ok=True)
 
+    with open(RESULT_PATH, "w") as f:
+        json.dump(results, f, indent=2)
+
+    print(f"Done! Results saved to: {RESULT_PATH}")
+
+# Run
 
 if __name__ == "__main__":
     run()
