@@ -4,9 +4,9 @@ import re
 from openai import OpenAI
 
 #CONFIG
-MODEL = "gpt-5.1"
-STRATEGY = "cot"
-RESULT_PATH = "results/results_cot_gpt-5.1.json"
+MODEL = "gpt-4o-mini"
+STRATEGY = "direct"
+RESULT_PATH = "results/results_direct_gpt-40-mini.json"
 DATASET_PATH = "data/dataset.json"
 
 TEMPERATURE = 0

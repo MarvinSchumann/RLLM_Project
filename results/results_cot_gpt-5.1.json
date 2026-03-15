@@ -6,10 +6,10 @@
     "ground_truth": "5",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We need to count vowels (a, e, i, o, u) in the string:\n\nString: `dgfdsfhuipoai`\n\nGo through each character:\n\n- d \u2013 not a vowel  \n- g \u2013 not a vowel  \n- f \u2013 not a vowel  \n- d \u2013 not a vowel  \n- s \u2013 not a vowel  \n- f \u2013 not a vowel  \n- h \u2013 not a vowel  \n- u \u2013 vowel (1)  \n- i \u2013 vowel (2)  \n- p \u2013 not a vowel  \n- o \u2013 vowel (3)  \n- a \u2013 vowel (4)  \n- i \u2013 vowel (5)  \n\nTotal vowels = 5\n\nResult: 5",
+    "raw_output": "Step 1: Identify the string:  \n`dgfdsfhuipoai`\n\nStep 2: Recall the vowels in English:  \n`a, e, i, o, u` (we\u2019ll ignore y)\n\nStep 3: Go through each character and check if it\u2019s a vowel:\n\n- d \u2192 not a vowel  \n- g \u2192 not a vowel  \n- f \u2192 not a vowel  \n- d \u2192 not a vowel  \n- s \u2192 not a vowel  \n- f \u2192 not a vowel  \n- h \u2192 not a vowel  \n- u \u2192 vowel (1)  \n- i \u2192 vowel (2)  \n- p \u2192 not a vowel  \n- o \u2192 vowel (3)  \n- a \u2192 vowel (4)  \n- i \u2192 vowel (5)\n\nStep 4: Count of vowels found = 5\n\nResult: 5",
     "parsed_prediction": "5",
     "correct": true,
-    "latency": 2.2489259243011475
+    "latency": 2.799729824066162
   },
   {
     "id": "2",
@@ -18,10 +18,10 @@
     "ground_truth": "5",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We need to count vowels (a, e, i, o, u) in the string:\n\nString: `o i h j s a h s a u d`\n\nCheck each character:\n- `o` \u2192 vowel (1)\n- `i` \u2192 vowel (2)\n- `h` \u2192 not vowel\n- `j` \u2192 not vowel\n- `s` \u2192 not vowel\n- `a` \u2192 vowel (3)\n- `h` \u2192 not vowel\n- `s` \u2192 not vowel\n- `a` \u2192 vowel (4)\n- `u` \u2192 vowel (5)\n- `d` \u2192 not vowel\n\nTotal vowels = 5\n\nResult: 5",
+    "raw_output": "We need to count the vowels (a, e, i, o, u) in the string:\n\nString: `o i h j s a h s a u d`\n\nCheck each character:\n- `o` \u2192 vowel (1)\n- `i` \u2192 vowel (2)\n- `h` \u2192 not a vowel\n- `j` \u2192 not a vowel\n- `s` \u2192 not a vowel\n- `a` \u2192 vowel (3)\n- `h` \u2192 not a vowel\n- `s` \u2192 not a vowel\n- `a` \u2192 vowel (4)\n- `u` \u2192 vowel (5)\n- `d` \u2192 not a vowel\n\nTotal number of vowels = 5\n\nResult: 5",
     "parsed_prediction": "5",
     "correct": true,
-    "latency": 2.817444086074829
+    "latency": 2.1665992736816406
   },
   {
     "id": "3",
@@ -30,10 +30,10 @@
     "ground_truth": "4",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "String: a u f n b e j t k f i  \n\nStep-by-step vowel check (vowels: a, e, i, o, u):\n\n- a \u2192 vowel (count = 1)  \n- u \u2192 vowel (count = 2)  \n- f \u2192 not vowel  \n- n \u2192 not vowel  \n- b \u2192 not vowel  \n- e \u2192 vowel (count = 3)  \n- j \u2192 not vowel  \n- t \u2192 not vowel  \n- k \u2192 not vowel  \n- f \u2192 not vowel  \n- i \u2192 vowel (count = 4)  \n\nResult: 4",
+    "raw_output": "We count vowels (a, e, i, o, u) in the string `aufnbejtkfi` step by step:\n\nString: a u f n b e j t k f i\n\nCheck each character:\n- a \u2192 vowel (count = 1)\n- u \u2192 vowel (count = 2)\n- f \u2192 not vowel\n- n \u2192 not vowel\n- b \u2192 not vowel\n- e \u2192 vowel (count = 3)\n- j \u2192 not vowel\n- t \u2192 not vowel\n- k \u2192 not vowel\n- f \u2192 not vowel\n- i \u2192 vowel (count = 4)\n\nResult: 4",
     "parsed_prediction": "4",
     "correct": true,
-    "latency": 1.8985259532928467
+    "latency": 2.2173142433166504
   },
   {
     "id": "4",
@@ -42,10 +42,10 @@
     "ground_truth": "1",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We need to count vowels (a, e, i, o, u) in the string:\n\nString: h k h g f d h y b n i j g\n\nCheck each character:\n- h \u2192 not a vowel  \n- k \u2192 not a vowel  \n- h \u2192 not a vowel  \n- g \u2192 not a vowel  \n- f \u2192 not a vowel  \n- d \u2192 not a vowel  \n- h \u2192 not a vowel  \n- y \u2192 not a standard vowel (usually not counted)  \n- b \u2192 not a vowel  \n- n \u2192 not a vowel  \n- i \u2192 vowel  \n- j \u2192 not a vowel  \n- g \u2192 not a vowel  \n\nOnly one vowel: \"i\".\n\nResult: 1",
+    "raw_output": "We need to count vowels (a, e, i, o, u) in the string:\n\nString: `hkhgfdhybnijg`\n\nGo through each character:\n\n- h \u2192 not a vowel  \n- k \u2192 not a vowel  \n- h \u2192 not a vowel  \n- g \u2192 not a vowel  \n- f \u2192 not a vowel  \n- d \u2192 not a vowel  \n- h \u2192 not a vowel  \n- y \u2192 not a vowel (usually not counted as vowel here)  \n- b \u2192 not a vowel  \n- n \u2192 not a vowel  \n- i \u2192 vowel \u2192 count = 1  \n- j \u2192 not a vowel  \n- g \u2192 not a vowel  \n\nTotal vowels = 1\n\nResult: 1",
     "parsed_prediction": "1",
     "correct": true,
-    "latency": 1.9033968448638916
+    "latency": 1.8359858989715576
   },
   {
     "id": "5",
@@ -54,10 +54,10 @@
     "ground_truth": "6",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "String: h g r w o p j u i a\n\nStep 1: Identify vowels (a, e, i, o, u): o, u, i, a \u2192 4 vowels  \nStep 2: Total letters: 10  \nStep 3: Consonants = total letters \u2212 vowels = 10 \u2212 4 = 6\n\nResult: 6",
+    "raw_output": "String: h g r w o p j u i a\n\nStep 1: Identify vowels (a, e, i, o, u):  \nVowels present: o, u, i, a \u2192 4 vowels\n\nStep 2: Total letters: 10\n\nStep 3: Consonants = Total letters \u2212 Vowels = 10 \u2212 4 = 6\n\nResult: 6",
     "parsed_prediction": "6",
     "correct": true,
-    "latency": 1.653223991394043
+    "latency": 1.9637391567230225
   },
   {
     "id": "6",
@@ -66,10 +66,10 @@
     "ground_truth": "9",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "String: `aaathqehsdjqiuw`\n\nStep-by-step, check each character:\n\n- a \u2013 vowel  \n- a \u2013 vowel  \n- a \u2013 vowel  \n- t \u2013 consonant (1)  \n- h \u2013 consonant (2)  \n- q \u2013 consonant (3)  \n- e \u2013 vowel  \n- h \u2013 consonant (4)  \n- s \u2013 consonant (5)  \n- d \u2013 consonant (6)  \n- j \u2013 consonant (7)  \n- q \u2013 consonant (8)  \n- i \u2013 vowel  \n- u \u2013 vowel  \n- w \u2013 consonant (9)  \n\nTotal consonants: 9",
+    "raw_output": "String: `aaathqehsdjqiuw`\n\nStep-by-step, check each character:\n\n- a \u2013 vowel  \n- a \u2013 vowel  \n- a \u2013 vowel  \n- t \u2013 consonant (1)  \n- h \u2013 consonant (2)  \n- q \u2013 consonant (3)  \n- e \u2013 vowel  \n- h \u2013 consonant (4)  \n- s \u2013 consonant (5)  \n- d \u2013 consonant (6)  \n- j \u2013 consonant (7)  \n- q \u2013 consonant (8)  \n- i \u2013 vowel  \n- u \u2013 vowel  \n- w \u2013 consonant (9)  \n\nTotal consonants: **9**",
     "parsed_prediction": "9",
     "correct": true,
-    "latency": 1.8917179107666016
+    "latency": 2.1684370040893555
   },
   {
     "id": "7",
@@ -78,10 +78,10 @@
     "ground_truth": "1",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "String: `auibuauioa`\n\nStep 1: List the letters: a, u, i, b, u, a, u, i, o, a  \nStep 2: Identify vowels (a, e, i, o, u): a, u, i, u, a, u, i, o, a  \nStep 3: Remaining letters are consonants: b  \nStep 4: Count consonants: 1  \n\nResult: 1",
+    "raw_output": "String: `auibuauioa`\n\nStep 1: List the letters: a, u, i, b, u, a, u, i, o, a  \nStep 2: Identify vowels (a, e, i, o, u): a, u, i, u, a, u, i, o, a  \nStep 3: The only consonant is: b  \nStep 4: Count consonants: 1  \n\nResult: **1**",
     "parsed_prediction": "1",
     "correct": true,
-    "latency": 1.5525610446929932
+    "latency": 2.5159380435943604
   },
   {
     "id": "8",
@@ -90,10 +90,10 @@
     "ground_truth": "12",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Step 1: Write the word and mark vowels (a, e, i, o, u):\n\nunfallversicherung  \nu (vowel)  \nn  \nf  \na (vowel)  \nl  \nl  \nv  \ne (vowel)  \nr  \ns  \ni (vowel)  \nc  \nh  \ne (vowel)  \nr  \nu (vowel)  \nn  \ng  \n\nStep 2: Count the consonants (non-vowels):\n\nn, f, l, l, v, r, s, c, h, r, n, g  \n\nThere are 12 consonants.\n\n12",
+    "raw_output": "Step 1: Write the string:  \nunfallversicherung  \n\nStep 2: Identify vowels (a, e, i, o, u):  \nu n f a l l v e r s i c h e r u n g  \nVowels: u, a, e, i, e, u  \n\nStep 3: Count vowels:  \nThere are 6 vowels.  \n\nStep 4: Count total letters:  \n\"unfallversicherung\" has 18 letters.  \n\nStep 5: Consonants = total letters \u2212 vowels = 18 \u2212 6 = 12  \n\n12",
     "parsed_prediction": "12",
     "correct": true,
-    "latency": 2.5918588638305664
+    "latency": 1.9867641925811768
   },
   {
     "id": "9",
@@ -102,10 +102,10 @@
     "ground_truth": "yes",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Step 1: Write the string clearly:  \n`huweh??_.113cx`\n\nStep 2: Count each character in order:  \n1. h  \n2. u  \n3. w  \n4. e  \n5. h  \n6. ?  \n7. ?  \n8. _  \n9. .  \n10. 1  \n11. 1  \n12. 3  \n13. c  \n14. x  \n\nStep 3: Total number of characters = 14.\n\nStep 4: Check if 14 is even:  \n14 \u00f7 2 = 7 with no remainder \u2192 14 is even.\n\nResult: even",
+    "raw_output": "Step 1: Write down the string:  \n`h u w e h ? ? _ . 1 1 3 c x`\n\nStep 2: Count each character one by one:  \n1. h  \n2. u  \n3. w  \n4. e  \n5. h  \n6. ?  \n7. ?  \n8. _  \n9. .  \n10. 1  \n11. 1  \n12. 3  \n13. c  \n14. x  \n\nStep 3: Total number of characters = 14.\n\nStep 4: 14 is an even number.\n\nResult: even",
     "parsed_prediction": "14",
     "correct": false,
-    "latency": 2.4091670513153076
+    "latency": 1.8912088871002197
   },
   {
     "id": "10",
@@ -114,10 +114,10 @@
     "ground_truth": "yes",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Count the characters one by one:\n\nString:\nd___?%&(5jdfhsd//c\u00a7&hdhsadu/a/\u00a7_\u00a7/hdfjsdfkzeruewr834374/2362364yes\n\nI'll index them:\n\n1. d  \n2. _  \n3. _  \n4. _  \n5. ?  \n6. %  \n7. &  \n8. (  \n9. 5  \n10. j  \n11. d  \n12. f  \n13. h  \n14. s  \n15. d  \n16. /  \n17. /  \n18. c  \n19. \u00a7  \n20. &  \n21. h  \n22. d  \n23. h  \n24. s  \n25. a  \n26. d  \n27. u  \n28. /  \n29. a  \n30. /  \n31. \u00a7  \n32. _  \n33. \u00a7  \n34. /  \n35. h  \n36. d  \n37. f  \n38. j  \n39. s  \n40. d  \n41. f  \n42. k  \n43. z  \n44. e  \n45. r  \n46. u  \n47. e  \n48. w  \n49. r  \n50. 8  \n51. 3  \n52. 4  \n53. 3  \n54. 7  \n55. 4  \n56. /  \n57. 2  \n58. 3  \n59. 6  \n60. 2  \n61. 3  \n62. 6  \n63. 4  \n64. y  \n65. e  \n66. s  \n\nTotal characters = 66, which is even.\n\neven",
+    "raw_output": "First, rewrite the string clearly:\n\n`d___?%&(5jdfhsd//c\u00a7&hdhsadu/a/\u00a7_\u00a7/hdfjsdfkzeruewr834374/2362364yes`\n\nWe need to count characters one by one:\n\n1. d  \n2. _  \n3. _  \n4. _  \n5. ?  \n6. %  \n7. &  \n8. (  \n9. 5  \n10. j  \n11. d  \n12. f  \n13. h  \n14. s  \n15. d  \n16. /  \n17. /  \n18. c  \n19. \u00a7  \n20. &  \n21. h  \n22. d  \n23. h  \n24. s  \n25. a  \n26. d  \n27. u  \n28. /  \n29. a  \n30. /  \n31. \u00a7  \n32. _  \n33. \u00a7  \n34. /  \n35. h  \n36. d  \n37. f  \n38. j  \n39. s  \n40. d  \n41. f  \n42. k  \n43. z  \n44. e  \n45. r  \n46. u  \n47. e  \n48. w  \n49. r  \n50. 8  \n51. 3  \n52. 4  \n53. 3  \n54. 7  \n55. 4  \n56. /  \n57. 2  \n58. 3  \n59. 6  \n60. 2  \n61. 3  \n62. 6  \n63. 4  \n64. y  \n65. e  \n66. s  \n\nTotal characters: 66.\n\n66 is even.\n\nResult: even",
     "parsed_prediction": "66",
     "correct": false,
-    "latency": 4.329927206039429
+    "latency": 3.134408950805664
   },
   {
     "id": "11",
@@ -126,10 +126,10 @@
     "ground_truth": "yes",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, write down the string:\n\n- String: `\"no\"`\n\nCount the characters:\n\n- `n` \u2192 1\n- `o` \u2192 2\n\nTotal number of characters = 2.\n\nCheck if 2 is even:\n\n- 2 is divisible by 2 with no remainder \u2192 it is even.\n\nResult: **yes**",
+    "raw_output": "String: `no`\n\nStep 1: Count the characters.  \n- `n` \u2192 1  \n- `o` \u2192 2  \n\nStep 2: The total number of characters is 2.  \n\nStep 3: 2 is an even number.  \n\nResult: yes",
     "parsed_prediction": "2",
     "correct": false,
-    "latency": 1.3870770931243896
+    "latency": 1.3123722076416016
   },
   {
     "id": "12",
@@ -138,10 +138,10 @@
     "ground_truth": "no",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Count the characters in the string `8459329458348349dfdsfhdsf` step by step:\n\n1. Separate into digits and letters to make counting easier:  \n   - Digits: `8459329458348349`  \n   - Letters: `dfdsfhdsf`\n\n2. Count the digits:  \n   `8459329458348349` has 16 digits.\n\n3. Count the letters:  \n   `dfdsfhdsf` has 9 letters.\n\n4. Total characters = digits + letters = 16 + 9 = 25.\n\n5. Check parity:  \n   25 is not divisible by 2, so it is odd.\n\nResult: odd",
+    "raw_output": "Step 1: Write down the string clearly:  \n`8459329458348349dfdsfhdsf`\n\nStep 2: Count the characters one by one:\n\n1. 8  \n2. 4  \n3. 5  \n4. 9  \n5. 3  \n6. 2  \n7. 9  \n8. 4  \n9. 5  \n10. 8  \n11. 3  \n12. 4  \n13. 8  \n14. 3  \n15. 4  \n16. 9  \n17. d  \n18. f  \n19. d  \n20. s  \n21. f  \n22. h  \n23. d  \n24. s  \n25. f  \n\nStep 3: Total number of characters = 25.\n\nStep 4: Check if 25 is even or odd.  \n25 is not divisible by 2, so it is odd.\n\nResult: odd",
     "parsed_prediction": "2",
     "correct": false,
-    "latency": 2.2232303619384766
+    "latency": 2.20150089263916
   },
   {
     "id": "13",
@@ -150,10 +150,10 @@
     "ground_truth": "C",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "The sequence is:\n\nABC ABC ABC ABC AB\n\nWe can see it repeats the pattern \u201cABC\u201d:\n\n- 1st group: ABC  \n- 2nd group: ABC  \n- 3rd group: ABC  \n- 4th group: ABC  \n- Then: AB (the first two letters of the next \u201cABC\u201d)\n\nSo the next character to complete the pattern \u201cABC\u201d is:\n\nC",
+    "raw_output": "The sequence is:\n\nABC ABC ABC ABC AB\n\nWe can see it repeats the pattern \u201cABC\u201d:\n\n- 1st group: ABC  \n- 2nd group: ABC  \n- 3rd group: ABC  \n- 4th group: ABC  \n\nAfter four full \u201cABC\u201d groups, the sequence continues with \u201cAB\u201d, which are the first two letters of the next \u201cABC\u201d group.\n\nSo the next character should be the third letter of that pattern, which is:\n\nC",
     "parsed_prediction": "4",
     "correct": false,
-    "latency": 2.2322051525115967
+    "latency": 1.7005369663238525
   },
   {
     "id": "14",
@@ -162,10 +162,10 @@
     "ground_truth": "9",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Look at the sequence:\n\n16, 8, 12, 6, 10, 5, ?\n\nStep 1: Separate into two interleaved subsequences by position.\n\n- Odd positions: 1st, 3rd, 5th, ...\n  - 16, 12, 10, ...\n- Even positions: 2nd, 4th, 6th, ...\n  - 8, 6, 5, ...\n\nStep 2: Analyze the odd-position subsequence.\n\n16 \u2192 12 \u2192 10  \nDifferences:  \n16 to 12: \u22124  \n12 to 10: \u22122  \n\nThis suggests a pattern of decreasing by 4, then by 2. A natural continuation is to keep decreasing by 2:  \n10 \u2212 2 = 8  \n\nSo the next odd-position term (7th term overall) should be 8.\n\nStep 3: Confirm even-position subsequence is at least reasonable.\n\n8 \u2192 6 \u2192 5  \nDifferences: \u22122, \u22121  \nThough not perfectly clear, it doesn\u2019t contradict the pattern found in the odd positions, and the sequence is often determined by the clearer subsequence.\n\nSo the next number in the full sequence is 8.\n\nResult: 8",
-    "parsed_prediction": "8",
-    "correct": false,
-    "latency": 4.980770826339722
+    "raw_output": "Look at the sequence:\n\n16, 8, 12, 6, 10, 5, ?\n\nStep 1: Separate into two interleaved subsequences by position.\n\n- Odd positions: 1st, 3rd, 5th, ...\n  - 16, 12, 10, ...\n- Even positions: 2nd, 4th, 6th, ...\n  - 8, 6, 5, ...\n\nStep 2: Analyze the odd-position subsequence: 16, 12, 10\n\n- 16 \u2192 12: \u22124  \n- 12 \u2192 10: \u22122  \n\nThe pattern is decreasing, and the amount subtracted is halving: \u22124, then \u22122, so next would be \u22121.\n\n- 10 \u2212 1 = 9\n\nStep 3: Check even-position subsequence: 8, 6, 5\n\n- 8 \u2192 6: \u22122  \n- 6 \u2192 5: \u22121  \n\nThis also suggests a halving subtraction pattern (\u22122, then \u22121), consistent with the idea used for the odd positions.\n\nStep 4: The next term in the full sequence is the next odd-position term, which we found as 9.\n\nResult: 9",
+    "parsed_prediction": "9",
+    "correct": true,
+    "latency": 3.260571241378784
   },
   {
     "id": "15",
@@ -174,10 +174,10 @@
     "ground_truth": "M",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re given the sequence: ACEGIK\n\n1. List the letters with their positions in the alphabet:\n   - A = 1  \n   - C = 3  \n   - E = 5  \n   - G = 7  \n   - I = 9  \n   - K = 11  \n\n2. Observe the pattern in positions:\n   - 1, 3, 5, 7, 9, 11  \n   These are consecutive odd numbers, increasing by 2 each time.\n\n3. The next odd number after 11 is 13.\n\n4. The 13th letter of the alphabet is:\n   - 13 \u2192 M\n\nResult: M",
+    "raw_output": "We\u2019re given the sequence: ACEGIK\n\n1. List the letters with their positions in the alphabet:\n   - A = 1  \n   - C = 3  \n   - E = 5  \n   - G = 7  \n   - I = 9  \n   - K = 11  \n\n2. Observe the pattern in the positions:\n   - 1, 3, 5, 7, 9, 11  \n   These are consecutive odd numbers, increasing by 2 each time.\n\n3. The next odd number after 11 is:\n   - 11 + 2 = 13\n\n4. Find the 13th letter of the alphabet:\n   - 13 = M\n\nResult: M",
     "parsed_prediction": "13",
     "correct": false,
-    "latency": 2.1595821380615234
+    "latency": 2.70900297164917
   },
   {
     "id": "16",
@@ -186,10 +186,10 @@
     "ground_truth": "2048",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re given the sequence:\n\n2, 4, 8, 16, 32, 64, 128, 256, 512, 1024\n\nStep 1: Look at how each term relates to the previous one.\n\n- 4 = 2 \u00d7 2  \n- 8 = 4 \u00d7 2  \n- 16 = 8 \u00d7 2  \n- 32 = 16 \u00d7 2  \n- 64 = 32 \u00d7 2  \n- 128 = 64 \u00d7 2  \n- 256 = 128 \u00d7 2  \n- 512 = 256 \u00d7 2  \n- 1024 = 512 \u00d7 2  \n\nSo each term is obtained by multiplying the previous term by 2.\n\nStep 2: Apply the same rule to the last term.\n\n- Next term = 1024 \u00d7 2 = 2048\n\nStep 3: State the final answer as the last word.\n\n2048",
+    "raw_output": "We\u2019re given the sequence:\n\n2, 4, 8, 16, 32, 64, 128, 256, 512, 1024\n\nStep 1: Look for a pattern in how each term relates to the previous one.\n\n- 2 \u2192 4: multiply by 2  \n- 4 \u2192 8: multiply by 2  \n- 8 \u2192 16: multiply by 2  \n- 16 \u2192 32: multiply by 2  \n- 32 \u2192 64: multiply by 2  \n- 64 \u2192 128: multiply by 2  \n- 128 \u2192 256: multiply by 2  \n- 256 \u2192 512: multiply by 2  \n- 512 \u2192 1024: multiply by 2  \n\nStep 2: The rule is \u201ceach term is the previous term multiplied by 2.\u201d\n\nStep 3: Apply the rule to the last term:\n\n1024 \u00d7 2 = 2048\n\nSo the next number in the sequence is 2048",
     "parsed_prediction": "2048",
     "correct": true,
-    "latency": 2.526376962661743
+    "latency": 2.5337061882019043
   },
   {
     "id": "17",
@@ -198,10 +198,10 @@
     "ground_truth": "{B, E, C}",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have an undirected (bidirectional) graph with:\n\n- Nodes: A, B, C, D, E  \n- Edges: (A,B), (B,D), (B,E), (C,E)\n\nBecause the graph is bidirectional, each edge can be traversed in both directions:\n\n- A \u2194 B  \n- B \u2194 D  \n- B \u2194 E  \n- C \u2194 E  \n\nWe want a path from B to C.\n\n1. Start at B.  \n2. From B, we can go to A, D, or E.  \n3. To reach C, we need to use the edge (C,E), so we must go through E.  \n4. So we go from B to E.  \n5. From E, we can go directly to C.\n\nThus, a valid sequence of nodes from B to C is:\n\n{B, E, C}",
-    "parsed_prediction": "5",
+    "raw_output": "We have a bidirectional graph with nodes: A, B, C, D, E  \nEdges (bidirectional): (A,B), (B,D), (B,E), (C,E)\n\nStep 1: List neighbors  \n- Neighbors of B: A, D, E  \n- Neighbors of E: B, C  \n- Neighbors of C: E  \n\nStep 2: Find a path from B to C  \nFrom B, we can go to E (via edge B\u2013E).  \nFrom E, we can go to C (via edge E\u2013C).  \n\nStep 3: Write the sequence of nodes  \nThe path is: B \u2192 E \u2192 C  \n\nSo in the requested format, the sequence is: {B, E, C}",
+    "parsed_prediction": "3",
     "correct": false,
-    "latency": 2.7138359546661377
+    "latency": 1.9125359058380127
   },
   {
     "id": "18",
@@ -213,7 +213,7 @@
     "raw_output": "We have a bidirectional graph with nodes: A, B, C, D, E  \nEdges: (A,B), (B,C), (C,D), (D,E)\n\nBecause the graph is bidirectional, you can move along edges in both directions.\n\nTo get from A to D, follow the connected edges:\n\n1. Start at A  \n2. From A, go to B via edge (A,B)  \n3. From B, go to C via edge (B,C)  \n4. From C, go to D via edge (C,D)\n\nSo the sequence of nodes is:\n\n{A, B, C, D}",
     "parsed_prediction": "4",
     "correct": false,
-    "latency": 2.2594962120056152
+    "latency": 1.724679946899414
   },
   {
     "id": "19",
@@ -222,10 +222,10 @@
     "ground_truth": "{A, D, E, B}",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have a bidirectional graph with nodes: A, B, C, D, E  \nEdges: (A,A), (A,D), (B,E), (D,E)\n\n1. From A, we can go to:\n   - A (self-loop, stays at A)\n   - D (via edge (A,D))\n\n2. From D, we can go to:\n   - A (back to A)\n   - E (via edge (D,E))\n\n3. From E, we can go to:\n   - D (back to D)\n   - B (via edge (B,E), since the graph is bidirectional)\n\nSo a valid path from A to B is:\nA \u2192 D \u2192 E \u2192 B\n\nIn the requested format, the result is {A, D, E, B}",
-    "parsed_prediction": "3",
+    "raw_output": "We have a bidirectional graph with nodes: A, B, C, D, E  \nand edges: (A,A), (A,D), (B,E), (D,E)\n\n1. Interpret edges as undirected:\n   - (A,A): self-loop at A (doesn\u2019t help us move to other nodes)\n   - (A,D): connects A and D\n   - (B,E): connects B and E\n   - (D,E): connects D and E\n\n2. From A, we can go to:\n   - A (via self-loop, stays at A)\n   - D (via edge A\u2013D)\n\n3. From D, we can go to:\n   - A (back to A)\n   - E (via edge D\u2013E)\n\n4. From E, we can go to:\n   - D (back to D)\n   - B (via edge E\u2013B)\n\n5. So a path from A to B is:\n   A \u2192 D \u2192 E \u2192 B\n\nIn the requested format, the sequence is {A, D, E, B}",
+    "parsed_prediction": "5",
     "correct": false,
-    "latency": 2.318290948867798
+    "latency": 4.721390962600708
   },
   {
     "id": "20",
@@ -234,10 +234,10 @@
     "ground_truth": "{A, C}",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have a bidirectional graph with nodes A, B, C, D, E and edges (A,B), (A,C), (A,D), (A,E).  \nSince there is a direct edge between A and C, the shortest path from A to C is simply:\n\n{A, C}",
-    "parsed_prediction": "We have a bidirectional graph with nodes A, B, C, D, E and edges (A,B), (A,C), (A,D), (A,E).  \nSince there is a direct edge between A and C, the shortest path from A to C is simply:\n\n{A, C}",
+    "raw_output": "We have a bidirectional graph with nodes: A, B, C, D, E  \nEdges: (A,B), (A,C), (A,D), (A,E)\n\nBecause the graph is bidirectional, each edge can be traversed in both directions.  \nWe want a path from A to C.\n\nLooking at the edges, there is a direct edge (A,C), so the shortest path is simply:\n\n{A, C}",
+    "parsed_prediction": "We have a bidirectional graph with nodes: A, B, C, D, E  \nEdges: (A,B), (A,C), (A,D), (A,E)\n\nBecause the graph is bidirectional, each edge can be traversed in both directions.  \nWe want a path from A to C.\n\nLooking at the edges, there is a direct edge (A,C), so the shortest path is simply:\n\n{A, C}",
     "correct": false,
-    "latency": 2.242994785308838
+    "latency": 1.64109206199646
   },
   {
     "id": "21",
@@ -246,10 +246,10 @@
     "ground_truth": "no",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have a bidirectional (undirected) graph with:\n\n- Nodes: A, B, C, D, E, F, G  \n- Edges: (A,B), (A,D), (B,D), (C,E), (D,F), (F,G)\n\nBecause the graph is bidirectional, each edge can be traversed in both directions.\n\nList neighbors:\n\n- A \u2194 B, D  \n- B \u2194 A, D  \n- C \u2194 E  \n- D \u2194 A, B, F  \n- E \u2194 C  \n- F \u2194 D, G  \n- G \u2194 F  \n\nWe want a path from A to E.\n\nStart from A and see what component it belongs to:\n\n- From A, we can reach:\n  - B (via A\u2013B)\n  - D (via A\u2013D)\n- From B, we can reach:\n  - A, D (already in this component)\n- From D, we can reach:\n  - A, B, F\n- From F, we can reach:\n  - D, G\n- From G, we can reach:\n  - F\n\nSo the connected component containing A is {A, B, D, F, G}.\n\nNow check E:\n\n- E is connected only to C (via C\u2013E).\n- C is connected only to E.\n\nSo the connected component containing E is {C, E}.\n\nSince {A, B, D, F, G} and {C, E} are disjoint and there is no edge connecting these two components, there is no way to travel from A to E.\n\nTherefore, the answer is: no.",
-    "parsed_prediction": "We have a bidirectional (undirected) graph with:\n\n- Nodes: A, B, C, D, E, F, G  \n- Edges: (A,B), (A,D), (B,D), (C,E), (D,F), (F,G)\n\nBecause the graph is bidirectional, each edge can be traversed in both directions.\n\nList neighbors:\n\n- A \u2194 B, D  \n- B \u2194 A, D  \n- C \u2194 E  \n- D \u2194 A, B, F  \n- E \u2194 C  \n- F \u2194 D, G  \n- G \u2194 F  \n\nWe want a path from A to E.\n\nStart from A and see what component it belongs to:\n\n- From A, we can reach:\n  - B (via A\u2013B)\n  - D (via A\u2013D)\n- From B, we can reach:\n  - A, D (already in this component)\n- From D, we can reach:\n  - A, B, F\n- From F, we can reach:\n  - D, G\n- From G, we can reach:\n  - F\n\nSo the connected component containing A is {A, B, D, F, G}.\n\nNow check E:\n\n- E is connected only to C (via C\u2013E).\n- C is connected only to E.\n\nSo the connected component containing E is {C, E}.\n\nSince {A, B, D, F, G} and {C, E} are disjoint and there is no edge connecting these two components, there is no way to travel from A to E.\n\nTherefore, the answer is: no.",
+    "raw_output": "We have a bidirectional (undirected) graph with:\n\n- Nodes: A, B, C, D, E, F, G  \n- Edges: (A,B), (A,D), (B,D), (C,E), (D,F), (F,G)\n\nBecause the graph is bidirectional, each edge can be traversed in both directions.\n\nList neighbors of each node:\n\n- A: B, D  \n- B: A, D  \n- C: E  \n- D: A, B, F  \n- E: C  \n- F: D, G  \n- G: F  \n\nNow check if there is any way to start at A and reach E by following edges:\n\n- From A we can go to B or D.\n- From B we can go to A or D (already in the same component as A).\n- From D we can go to A, B, or F.\n- From F we can go to D or G.\n- From G we can go to F.\n\nSo the connected component containing A is {A, B, D, F, G}.\n\nSeparately:\n\n- From C we can go to E.\n- From E we can go to C.\n\nSo the connected component containing E is {C, E}.\n\nSince {A, B, D, F, G} and {C, E} are disjoint and there is no edge connecting these two components, there is no path from A to E.\n\nAnswer: No",
+    "parsed_prediction": "We have a bidirectional (undirected) graph with:\n\n- Nodes: A, B, C, D, E, F, G  \n- Edges: (A,B), (A,D), (B,D), (C,E), (D,F), (F,G)\n\nBecause the graph is bidirectional, each edge can be traversed in both directions.\n\nList neighbors of each node:\n\n- A: B, D  \n- B: A, D  \n- C: E  \n- D: A, B, F  \n- E: C  \n- F: D, G  \n- G: F  \n\nNow check if there is any way to start at A and reach E by following edges:\n\n- From A we can go to B or D.\n- From B we can go to A or D (already in the same component as A).\n- From D we can go to A, B, or F.\n- From F we can go to D or G.\n- From G we can go to F.\n\nSo the connected component containing A is {A, B, D, F, G}.\n\nSeparately:\n\n- From C we can go to E.\n- From E we can go to C.\n\nSo the connected component containing E is {C, E}.\n\nSince {A, B, D, F, G} and {C, E} are disjoint and there is no edge connecting these two components, there is no path from A to E.\n\nAnswer: No",
     "correct": false,
-    "latency": 3.531548023223877
+    "latency": 4.249269962310791
   },
   {
     "id": "22",
@@ -258,10 +258,10 @@
     "ground_truth": "yes",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have an undirected (bidirectional) graph with:\n\n- Nodes: A, B, C, D, E, F, G  \n- Edges: (A,C), (A,E), (B,E), (C,G), (D,F), (D,G)\n\nBecause the graph is bidirectional, each edge can be traversed in both directions.\n\nWe want to know if there is a path from A to F.\n\n1. Start at A. From A, we can go to:\n   - C (via edge A\u2013C)\n   - E (via edge A\u2013E)\n\n2. From C, we can go to:\n   - A (back)\n   - G (via edge C\u2013G)\n\n3. From E, we can go to:\n   - A (back)\n   - B (via edge E\u2013B)\n\n4. From G, we can go to:\n   - C (back)\n   - D (via edge G\u2013D)\n\n5. From D, we can go to:\n   - G (back)\n   - F (via edge D\u2013F)\n\nThus, one explicit path from A to F is:\nA \u2192 C \u2192 G \u2192 D \u2192 F\n\nSo, a path from A to F does indeed exist.  \nResult: Yes",
+    "raw_output": "We have an undirected (bidirectional) graph with:\n\n- Nodes: A, B, C, D, E, F, G  \n- Edges: (A,C), (A,E), (B,E), (C,G), (D,F), (D,G)\n\nBecause the graph is bidirectional, each edge can be traversed in both directions.\n\nList neighbors:\n\n- A \u2194 C, E  \n- B \u2194 E  \n- C \u2194 A, G  \n- D \u2194 F, G  \n- E \u2194 A, B  \n- F \u2194 D  \n- G \u2194 C, D  \n\nWe want a path from A to F.\n\nStart at A:\n\n1. From A, we can go to C or E.\n2. From C, we can go to A or G.\n3. From E, we can go to A or B.\n4. From G, we can go to C or D.\n5. From D, we can go to F or G.\n\nTry to reach F:\n\n- A \u2192 C  \n- C \u2192 G  \n- G \u2192 D  \n- D \u2192 F  \n\nSo there is a path A\u2013C\u2013G\u2013D\u2013F.\n\nAnswer: Yes",
     "parsed_prediction": "5",
     "correct": false,
-    "latency": 5.150665998458862
+    "latency": 3.455235004425049
   },
   {
     "id": "23",
@@ -270,10 +270,10 @@
     "ground_truth": "no",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have an undirected (bidirectional) graph with nodes:\nA, B, C, D, E, F, G\n\nEdges (undirected):\n(A, C), (A, D), (C, D), (C, E), (D, G), (F, G)\n\nStep 1: List neighbors of each node\n- A: C, D  \n- B: (no edges given)  \n- C: A, D, E  \n- D: A, C, G  \n- E: C  \n- F: G  \n- G: D, F  \n\nStep 2: Start from E and see where we can go\nFrom E:\n- E \u2192 C (only neighbor)\n\nFrom C:\n- C \u2192 A, D, E  \nWe already came from E, so new options: A, D\n\nFrom A:\n- A \u2192 C, D  \nBoth already in our explored set (C, D, A), so nothing new.\n\nFrom D:\n- D \u2192 A, C, G  \nA and C already explored; new node: G\n\nFrom G:\n- G \u2192 D, F  \nD already explored; new node: F\n\nFrom F:\n- F \u2192 G  \nG already explored; no new nodes.\n\nStep 3: Check if B is reachable\nThe set of reachable nodes from E is {E, C, A, D, G, F}.  \nNode B is not in this set, and B has no edges at all, so it is isolated.\n\nTherefore, there is no path from E to B.\n\nResult: no",
-    "parsed_prediction": "3",
+    "raw_output": "We have an undirected (bidirectional) graph with nodes:\nA, B, C, D, E, F, G\n\nEdges (undirected):\n(A, C), (A, D), (C, D), (C, E), (D, G), (F, G)\n\nStep 1: List neighbors of each node\n- A: C, D  \n- B: (no edges given)  \n- C: A, D, E  \n- D: A, C, G  \n- E: C  \n- F: G  \n- G: D, F  \n\nStep 2: We want a path from E to B.\n\nStep 3: Explore from E:\n- From E, we can go to C.\n- From C, we can go to A, D, E.\n- From A, we can go to C, D.\n- From D, we can go to A, C, G.\n- From G, we can go to D, F.\n- From F, we can go to G.\n\nStep 4: The reachable set from E is:\nE \u2192 C \u2192 {A, D, E} \u2192 from A,D \u2192 {C,G} \u2192 from G \u2192 {D,F}\n\nSo reachable nodes from E are:\nE, C, A, D, G, F\n\nStep 5: B is not in this reachable set, and B has no edges at all, so it is isolated.\n\nTherefore, no path from E to B exists.\n\nResult: No",
+    "parsed_prediction": "5",
     "correct": false,
-    "latency": 3.2839269638061523
+    "latency": 4.537889003753662
   },
   {
     "id": "24",
@@ -282,10 +282,10 @@
     "ground_truth": "yes",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have a bidirectional graph, so every edge can be traversed in both directions.\n\nNodes: A, B, C, D, E, F, G  \nEdges: (A,C), (B,C), (C,D), (C,E), (D,F)\n\nStep 1: List neighbors from each node using the edges:\n- A is connected to C\n- B is connected to C\n- C is connected to A, B, D, E\n- D is connected to C, F\n- E is connected to C\n- F is connected to D\n- G is isolated (no edges)\n\nStep 2: We want a path from B to F.\n\nStart at B:\n- From B, we can go to C (via edge B\u2013C).\n\nFrom C:\n- From C, we can go to D (via edge C\u2013D).\n\nFrom D:\n- From D, we can go to F (via edge D\u2013F).\n\nStep 3: Combine these steps into a path:\nB \u2192 C \u2192 D \u2192 F\n\nThis is a valid path from B to F in the graph.\n\nAnswer: Yes",
-    "parsed_prediction": "3",
+    "raw_output": "We have a bidirectional (undirected) graph with nodes:\nA, B, C, D, E, F, G\n\nEdges (undirected):\n(A, C)  \n(B, C)  \n(C, D)  \n(C, E)  \n(D, F)\n\nStep 1: Start at node B.  \nFrom B, we can follow edge (B, C) to reach C.\n\nStep 2: From C, we can go to:\n- A via (A, C)\n- B via (B, C)\n- D via (C, D)\n- E via (C, E)\n\nWe are trying to reach F, so going toward D is promising.\n\nStep 3: From C, go to D via edge (C, D).\n\nStep 4: From D, we can go to:\n- C via (C, D)\n- F via (D, F)\n\nStep 5: From D, go to F via edge (D, F).\n\nThus, a path from B to F is:\nB \u2192 C \u2192 D \u2192 F\n\nSo, a path from B to F does indeed exist.  \nAnswer: Yes",
+    "parsed_prediction": "5",
     "correct": false,
-    "latency": 4.9060070514678955
+    "latency": 2.7172930240631104
   },
   {
     "id": "25",
@@ -294,10 +294,10 @@
     "ground_truth": "4",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. List the nodes: A, B, C, D, E, F, G  \n2. List the edges: (A,C), (B,C), (C,D), (C,E), (D,F)  \n   - Since the graph is bidirectional, you can move both ways along each edge.\n\n3. We want a path from B to F.  \n   - From B, the only connection is to C \u2192 path starts: B \u2192 C  \n   - From C, to get closer to F, we can go to D (since C connects to D) \u2192 B \u2192 C \u2192 D  \n   - From D, we can go directly to F \u2192 B \u2192 C \u2192 D \u2192 F  \n\n4. Count the nodes passed, including start (B) and finish (F):  \n   - B, C, D, F \u2192 that is 4 nodes.\n\nResult: 4",
+    "raw_output": "1. List the nodes: A, B, C, D, E, F, G  \n2. List the edges (bidirectional):  \n   - A\u2013C  \n   - B\u2013C  \n   - C\u2013D  \n   - C\u2013E  \n   - D\u2013F  \n\n3. We want a path from B to F.  \n   - From B, the only connection is to C \u2192 path starts: B \u2192 C  \n   - From C, to get closer to F, we go to D \u2192 path: B \u2192 C \u2192 D  \n   - From D, we can go to F \u2192 path: B \u2192 C \u2192 D \u2192 F  \n\n4. Count the nodes in this path, including start and finish:  \n   - B, C, D, F \u2192 4 nodes  \n\nResult: 4",
     "parsed_prediction": "4",
     "correct": true,
-    "latency": 2.7285242080688477
+    "latency": 2.135826826095581
   },
   {
     "id": "26",
@@ -306,10 +306,10 @@
     "ground_truth": "5",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have a bidirectional graph with nodes:  \nA, B, C, D, E, F, G  \n\nEdges (undirected):  \n(A, G), (B, D), (C, D), (C, E), (D, G)\n\nWe want a path from A to E and to count how many nodes we pass including start (A) and finish (E).\n\n1. From A, we can go to G (edge A\u2013G).\n2. From G, we can go to D (edge G\u2013D).\n3. From D, we can go to C (edge D\u2013C).\n4. From C, we can go to E (edge C\u2013E).\n\nSo one valid path is:  \nA \u2192 G \u2192 D \u2192 C \u2192 E\n\nNow count the nodes in this path:  \nA (1), G (2), D (3), C (4), E (5)\n\nSo the number of nodes passed, including start and finish, is 5\n\n5",
+    "raw_output": "We have a bidirectional graph with nodes:  \nA, B, C, D, E, F, G  \n\nEdges (undirected):  \n(A, G), (B, D), (C, D), (C, E), (D, G)\n\nStep 1: List connections clearly  \n- A is connected to G  \n- G is connected to A and D  \n- D is connected to G, B, and C  \n- C is connected to D and E  \n- E is connected to C  \n\nStep 2: Find a path from A to E  \nStart at A:  \nA \u2192 G \u2192 D \u2192 C \u2192 E  \n\nStep 3: Count how many nodes are passed, including start and finish  \nNodes in the path: A, G, D, C, E  \n\nThat is 5 nodes total.\n\nResult: 5",
     "parsed_prediction": "5",
     "correct": true,
-    "latency": 2.7623517513275146
+    "latency": 2.2990779876708984
   },
   {
     "id": "27",
@@ -318,10 +318,10 @@
     "ground_truth": "2",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. List the nodes: A, B, C, D, E, F, G  \n2. List the edges (bidirectional):  \n   - A\u2013E  \n   - B\u2013C  \n   - C\u2013E  \n   - D\u2013E  \n   - F\u2013G  \n\n3. We want a path from F to G.  \n4. There is a direct edge between F and G.  \n5. So the path is: F \u2192 G  \n6. The nodes passed, including start and finish, are F and G.  \n7. That is 2 nodes in total.\n\nResult: 2",
+    "raw_output": "1. List the nodes: A, B, C, D, E, F, G.  \n2. List the edges (bidirectional): (A,E), (B,C), (C,E), (D,E), (F,G).  \n3. We need a path from F to G.  \n4. There is a direct edge (F,G), so the path is F \u2192 G.  \n5. The nodes passed, including start and finish, are F and G.  \n6. Count them: 2 nodes.\n\nResult: 2",
     "parsed_prediction": "2",
     "correct": true,
-    "latency": 2.1550681591033936
+    "latency": 1.869891881942749
   },
   {
     "id": "28",
@@ -330,10 +330,10 @@
     "ground_truth": "1",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have a bidirectional graph with nodes:  \nA, B, C, D, E, F, G  \n\nEdges:  \n- (A, A)  \n- (B, C)  \n- (C, E)  \n- (D, E)  \n- (F, G)\n\n1. The question asks: how many nodes, including start and finish, do you pass when going from A to A?\n2. There is a self-loop edge (A, A). That means you can start at A and follow the edge back to A.\n3. When counting nodes passed on this path, including start and finish, you visit A as the starting node and A as the ending node.\n4. Even though it is the same node, it is counted twice in the path (once as start, once as finish).\n\nSo the number of nodes passed, including start and finish, is 2.",
-    "parsed_prediction": "2",
-    "correct": false,
-    "latency": 3.4835269451141357
+    "raw_output": "We have a bidirectional graph with nodes:  \nA, B, C, D, E, F, G  \n\nEdges:  \n- (A, A)  \n- (B, C)  \n- (C, E)  \n- (D, E)  \n- (F, G)\n\nStep 1: Interpret the edge (A, A).  \nThis is a self-loop at node A, meaning you start at A and can go from A back to A without visiting any other node.\n\nStep 2: Determine the path from A to A.  \nThe simplest path is just staying at A (or traversing the self-loop but not changing nodes). In either case, the only node you pass is A itself.\n\nStep 3: Count the nodes passed, including start and finish.  \nYou only visit node A.\n\nSo the number of nodes passed is: **1**",
+    "parsed_prediction": "1",
+    "correct": true,
+    "latency": 2.176007032394409
   },
   {
     "id": "29",
@@ -342,10 +342,10 @@
     "ground_truth": "c6",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re White, so we move pawns \u201cup\u201d the board, from rank 2 toward rank 8.\n\n- The pawn starts on c3.\n- First move forward one square: from c3 to c4.\n- Second move forward one square: from c4 to c5.\n- Third move forward one square: from c5 to c6.\n\nSo after moving forward three times, the pawn is on c6.",
+    "raw_output": "1. A standard chessboard has files labeled a\u2013h (columns) and ranks labeled 1\u20138 (rows).  \n2. The square c3 means: file c, rank 3.  \n3. A white pawn moves \u201cforward\u201d by increasing the rank number (toward rank 8).  \n4. Starting from c3:\n   - First move forward: c3 \u2192 c4  \n   - Second move forward: c4 \u2192 c5  \n   - Third move forward: c5 \u2192 c6  \n\nSo after moving forward three times from c3, the pawn is on c6.",
     "parsed_prediction": "6",
     "correct": false,
-    "latency": 1.69716215133667
+    "latency": 3.2439889907836914
   },
   {
     "id": "30",
@@ -354,10 +354,10 @@
     "ground_truth": "d6",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Start: The knight is on f2.\n\nA knight move of \u201ctwo tiles up and one to the left\u201d means:\n- Up: increase the rank (number) by 2\n- Left: decrease the file (letter) by 1\n\n**First move:**\n- From f2, two up \u2192 rank 2 \u2192 4\n- One left \u2192 file f \u2192 e  \nSo after the first move, the knight is on e4.\n\n**Second move (again two up and one left):**\n- From e4, two up \u2192 rank 4 \u2192 6\n- One left \u2192 file e \u2192 d  \nSo after the second move, the knight is on d6.\n\nResult: d6",
+    "raw_output": "1. Start: The knight is on **f2**.\n\n2. First move: \u201ctwo tiles up and one to the left\u201d  \n   - Two up from rank 2 \u2192 rank 4  \n   - One left from file f \u2192 file e  \n   So f2 \u2192 **e4**\n\n3. Second move: again \u201ctwo tiles up and one to the left\u201d from e4  \n   - Two up from rank 4 \u2192 rank 6  \n   - One left from file e \u2192 file d  \n   So e4 \u2192 **d6**\n\nResult: **d6**",
     "parsed_prediction": "6",
     "correct": false,
-    "latency": 1.9881200790405273
+    "latency": 1.719027042388916
   },
   {
     "id": "31",
@@ -366,10 +366,10 @@
     "ground_truth": "d3",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Start at b5 as black.\n\nFor black, \u201cforward\u201d means toward rank 1 (down the board numerically).\n\n1. First forward: b5 \u2192 b4  \n2. Second forward: b4 \u2192 b3  \n3. Third forward: b3 \u2192 b2  \n\nNow \u201ctwice to the left.\u201d From Black\u2019s perspective, left is toward the a-file (decreasing file letter):\n\n4. First left: b2 \u2192 a2  \n5. Second left: a2 \u2192 (off the board, so this move is impossible)\n\nIf we ignore the impossibility and just continue the instruction pattern, the only square still on the board after the valid moves is:\n\na2\n\nSo the final word is: a2",
-    "parsed_prediction": "2",
+    "raw_output": "We need to interpret the directions relative to Black\u2019s perspective.\n\nFor Black:\n- \u201cForward\u201d means toward rank 1 (down the board in usual diagrams).\n- \u201cBackward\u201d means toward rank 8 (up the board).\n- \u201cLeft\u201d means toward file a (to the left from Black\u2019s side).\n\nStart: b5  \nCoordinates: file b, rank 5.\n\n1) Move forward three times (toward rank 1):\n- 1st forward: b5 \u2192 b4  \n- 2nd forward: b4 \u2192 b3  \n- 3rd forward: b3 \u2192 b2  \n\nNow on b2.\n\n2) Move left twice (toward file a):\n- 1st left: b2 \u2192 a2  \n- 2nd left: a2 \u2192 (would be off the board to the left of file a)\n\nSo after the second left, the king would be off the board. But if we assume the intent is to stay on the board and only count legal squares, then after one left we are on a2.\n\n3) Move backward once (toward rank 8):\n- From a2 backward: a2 \u2192 a3  \n\nSo the final square (staying on the board) is a3.",
+    "parsed_prediction": "3",
     "correct": false,
-    "latency": 5.431612968444824
+    "latency": 2.9626312255859375
   },
   {
     "id": "32",
@@ -378,10 +378,10 @@
     "ground_truth": "e4",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Start: knight on e4.\n\n1. \u201cMove forward two tiles and on the right\u201d  \n   - As White, \u201cforward\u201d means towards rank 8 (up the board).  \n   - From e4, two forward: e4 \u2192 e5 \u2192 e6  \n   - Then one to the right (towards the h-file, i.e., increasing file letter): e6 \u2192 f6  \n   So after the first move, the knight is on f6.\n\n2. \u201cThen two backwards and one to the left\u201d  \n   - \u201cBackwards\u201d from White\u2019s perspective is towards rank 1 (down the board).  \n   - From f6, two backwards: f6 \u2192 f5 \u2192 f4  \n   - Then one to the left (towards the a-file, i.e., decreasing file letter): f4 \u2192 e4  \n\nFinal square: e4",
+    "raw_output": "Start: knight on e4.\n\n1. \u201cMove forward two tiles and on the right\u201d  \n   - As White, \u201cforward\u201d means towards rank 8 (up the board).  \n   - From e4, two forward: e4 \u2192 e5 \u2192 e6  \n   - Then one to the right (towards the h-file): e6 \u2192 f6  \n   So the knight goes from e4 to f6.\n\n2. \u201cThen two backwards and one to the left\u201d  \n   - \u201cBackwards\u201d from White\u2019s perspective is towards rank 1 (down the board).  \n   - From f6, two backwards: f6 \u2192 f5 \u2192 f4  \n   - Then one to the left (towards the a-file): f4 \u2192 e4  \n\nFinal square: e4",
     "parsed_prediction": "4",
     "correct": false,
-    "latency": 2.7706806659698486
+    "latency": 2.515346050262451
   },
   {
     "id": "33",
@@ -390,10 +390,10 @@
     "ground_truth": "c5",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We want a path for a white knight from a4 to e6 in exactly two moves, and we\u2019re asked which square it *passes through* (the intermediate square).\n\n1. List all knight moves from a4:\n   - From a4, the knight can go to:\n     - b6 (2 up, 1 right)\n     - c5 (1 up, 2 right)\n     - c3 (1 down, 2 right)\n     - b2 (2 down, 1 right)\n\n2. Now see which of these can reach e6 in one knight move:\n   - From b6, knight moves are: a8, c8, d7, d5, c4, a4, d7 (already listed), c4 (already listed). e6 is not among them.\n   - From c5, knight moves are: a6, a4, b7, d7, e6, e4, b3, d3. Here we see e6 is reachable.\n   - From c3, knight moves are: a4, a2, b5, d5, e4, e2, b1, d1. No e6.\n   - From b2, knight moves are: a4, c4, d3, d1, a0 (off-board), c0 (off-board), a? (others off-board). No e6.\n\n3. The only valid two-move path from a4 to e6 is:\n   - a4 \u2192 c5 \u2192 e6\n\nSo the tile you cross is c5, and the last word is: c5",
+    "raw_output": "We want a path for a white knight from a4 to e6 in exactly two knight moves, and we\u2019re asked which square is *crossed* (i.e., the intermediate square).\n\n1. A knight moves in an L-shape: 2 squares in one direction and 1 square perpendicular.\n2. From a4, list all possible knight moves:\n   - (2 right, 1 up): c5  \n   - (2 right, 1 down): c3  \n   - (1 right, 2 up): b6  \n   - (1 right, 2 down): b2  \n   (Other combinations go off the board.)\n   So from a4 we can reach: b6, c5, c3, b2.\n3. From e6, list all possible previous squares a knight could come from (i.e., all squares that can move to e6):\n   - (2 left, 1 up): c7  \n   - (2 left, 1 down): c5  \n   - (2 right, 1 up): g7  \n   - (2 right, 1 down): g5  \n   - (1 left, 2 up): d8  \n   - (1 left, 2 down): d4  \n   - (1 right, 2 up): f8  \n   - (1 right, 2 down): f4  \n   So possible predecessors of e6 are: c7, c5, g7, g5, d8, d4, f8, f4.\n4. The intermediate square must be reachable from a4 and must itself be able to reach e6. The intersection of the two sets:\n   - From a4: {b6, c5, c3, b2}  \n   - To e6: {c7, c5, g7, g5, d8, d4, f8, f4}  \n   Intersection: c5.\n\nSo the tile you cross is c5, and the last word is: c5",
     "parsed_prediction": "5",
     "correct": false,
-    "latency": 3.7718920707702637
+    "latency": 4.8642659187316895
   },
   {
     "id": "34",
@@ -402,10 +402,10 @@
     "ground_truth": "d5",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Your pawn starts on **d4** and needs to reach **d6** in two moves.\n\n1. Pawns move straight forward (toward higher ranks for White).\n2. From d4, the pawn can move one square forward to **d5**.\n3. From d5, it can then move one square forward to **d6**.\n\nSo, the square you cross in between is: **d5**.",
+    "raw_output": "Your pawn starts on d4.\n\n1. Pawns move straight forward (toward higher ranks for White).\n2. To get from d4 to d6 in two moves, the pawn must go one square forward each move.\n3. First move: d4 \u2192 d5  \n4. Second move: d5 \u2192 d6  \n\nSo the tile you cross on the way to d6 is d5.",
     "parsed_prediction": "5",
     "correct": false,
-    "latency": 1.8916990756988525
+    "latency": 1.7922699451446533
   },
   {
     "id": "35",
@@ -414,10 +414,10 @@
     "ground_truth": "e4",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First note how a bishop moves: diagonally any number of squares, but it must stay on the same color square.\n\n1. The starting square h1 is a dark square.\n2. The target square g6 is a light square.\n3. A bishop on a dark square can never reach a light square, no matter how many moves it makes, because every diagonal move keeps it on the same color.\n4. Therefore, it is impossible to go from h1 to g6 in two moves (or any number of moves), so there is no intermediate tile you can cross.\n\nImpossible",
+    "raw_output": "First note how a bishop moves: only diagonally, staying on the same color square.\n\n1. The square h1 is a dark square.\n2. The square g6 is a light square.\n3. A bishop can never move from a dark square to a light square, not in one move and not in any number of moves, because it is confined to squares of one color.\n\nTherefore, there is no possible path from h1 to g6 at all, so there is no tile you can cross in two moves.\n\nAnswer: impossible",
     "parsed_prediction": "6",
     "correct": false,
-    "latency": 1.7631430625915527
+    "latency": 2.2671802043914795
   },
   {
     "id": "36",
@@ -426,10 +426,10 @@
     "ground_truth": "d2",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First think about how a king moves: one square in any direction (horizontally, vertically, or diagonally).\n\nWe start at c3 and want to reach e1 in exactly two moves.\n\n1. From c3, list all squares the king can move to in one move:\n   - Horizontally/vertically: b3, d3, c2, c4  \n   - Diagonally: b2, b4, d2, d4  \n\n2. From each of these, check which can reach e1 in one more king move (i.e., be one square away from e1):\n\n   Squares that are one move from e1 are:  \n   d2, e2, f2, d1, f1, d0 (invalid), e0 (invalid), f0 (invalid).  \n   So valid neighbors of e1: d2, e2, f2, d1, f1.\n\n3. Intersect this set with the squares reachable from c3 in one move:\n   From step 1 we had: b3, d3, c2, c4, b2, b4, d2, d4.  \n   The overlap with {d2, e2, f2, d1, f1} is just d2.\n\nSo the path is: c3 \u2192 d2 \u2192 e1, and the tile you cross is d2.",
+    "raw_output": "First note the coordinates:\n\n- Start: c3  \n- End: e1  \n\nA king moves one square in any direction (including diagonals). We must reach e1 from c3 in exactly two king moves, so we need an intermediate square X such that:\n\n1. X is one king move from c3  \n2. e1 is one king move from X  \n\nList squares one move from c3:\n\n- Horizontally/vertically: b3, d3, c2, c4  \n- Diagonally: b2, b4, d2, d4  \n\nSo possible X are: b3, d3, c2, c4, b2, b4, d2, d4.\n\nNow list squares one move from e1:\n\n- Horizontally/vertically: d1, f1, e2  \n- Diagonally: d2, f2  \n\nSo from e1 you can reach: d1, f1, e2, d2, f2.\n\nThe intersection of the two sets (squares reachable from c3 and from e1) is:\n\n- d2\n\nThus the king path is: c3 \u2192 d2 \u2192 e1, and the tile you cross is d2.  \n\nd2",
     "parsed_prediction": "2",
     "correct": false,
-    "latency": 4.069720983505249
+    "latency": 3.6125848293304443
   },
   {
     "id": "37",
@@ -438,10 +438,10 @@
     "ground_truth": "T",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, list the letters: A, E, O, T, U.\n\nStep 1: Check if they are vowels or consonants.  \n- A: vowel  \n- E: vowel  \n- O: vowel  \n- U: vowel  \n- T: consonant  \n\nStep 2: Identify the pattern.  \nFour of the letters (A, E, O, U) are vowels. One letter (T) is not a vowel.\n\nStep 3: The one that does not fit the group of vowels is:\n\nT",
+    "raw_output": "First, list the letters: A, E, O, T, U.\n\nStep 1: Check if they are vowels or consonants.  \n- A: vowel  \n- E: vowel  \n- O: vowel  \n- U: vowel  \n- T: consonant  \n\nStep 2: See which property most of them share.  \nFour of them (A, E, O, U) are vowels.  \nOne of them (T) is not a vowel.\n\nStep 3: Identify the odd one out.  \nThe only consonant in the group is T.\n\nResult: T",
     "parsed_prediction": "3",
     "correct": false,
-    "latency": 2.837385892868042
+    "latency": 2.4161980152130127
   },
   {
     "id": "38",
@@ -450,10 +450,10 @@
     "ground_truth": "5",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re looking for a pattern that four of the numbers share, and one breaks.\n\nNumbers: 14, 2, 200, 5, 10\n\nStep 1: Check parity (odd/even)  \n- 14 \u2192 even  \n- 2 \u2192 even  \n- 200 \u2192 even  \n- 5 \u2192 odd  \n- 10 \u2192 even  \n\nOnly 5 is odd; all the others are even.\n\nStep 2: Check other simple properties (just to be sure)  \n- Divisibility by 5: 5, 10, 200 are divisible by 5; 14 and 2 are not. That would give two \u201codd ones out,\u201d so this is weaker.  \n- Size, factors, etc., don\u2019t give a cleaner single exception than parity.\n\nStep 3: Choose the clearest unique property  \nThe cleanest and most standard distinction is that 5 is the only odd number, while the rest are even.\n\nResult: 5",
+    "raw_output": "We want to see if four of the numbers share a pattern and one does not.\n\nThe numbers are: 14, 2, 200, 5, 10.\n\nCheck simple properties:\n\n- Even/odd:\n  - 14: even  \n  - 2: even  \n  - 200: even  \n  - 10: even  \n  - 5: odd  \n\nSo 5 is the only odd number.\n\nCheck divisibility by 2:\n- 14 \u00f7 2 = 7 (integer)  \n- 2 \u00f7 2 = 1 (integer)  \n- 200 \u00f7 2 = 100 (integer)  \n- 10 \u00f7 2 = 5 (integer)  \n- 5 \u00f7 2 = 2.5 (not integer)\n\nAgain, 5 is the only one not divisible by 2.\n\nThus, the number that does not fit in the group is 5.",
     "parsed_prediction": "5",
     "correct": true,
-    "latency": 3.311582088470459
+    "latency": 2.946692705154419
   },
   {
     "id": "39",
@@ -462,10 +462,10 @@
     "ground_truth": "Tom",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re given the group: Tom, Mary, Lisa, Luke, Lois.\n\nWe want to find which name does not fit.\n\nStep 1: Look at obvious patterns  \n- All are common first names.  \n- Both male and female names are present, so gender doesn\u2019t clearly separate one.  \n- All are short (4\u20135 letters). No clear odd one out yet.\n\nStep 2: Check initial letters  \n- Tom \u2013 T  \n- Mary \u2013 M  \n- Lisa \u2013 L  \n- Luke \u2013 L  \n- Lois \u2013 L  \n\nOnly Tom does not start with L or M? But Mary also doesn\u2019t start with L, so that\u2019s not unique.\n\nStep 3: Check letter counts  \n- Tom \u2013 3 letters  \n- Mary \u2013 4 letters  \n- Lisa \u2013 4 letters  \n- Luke \u2013 4 letters  \n- Lois \u2013 4 letters  \n\nTom is the only 3-letter name; all others have 4 letters.\n\nStep 4: Confirm no stronger pattern  \nNo other clear linguistic or common-knowledge pattern (e.g., all being from the same show, same origin, etc.) beats the simple structural pattern of length.\n\nSo the one that does not fit is:\n\nTom",
-    "parsed_prediction": "4",
+    "raw_output": "First, list the names:\n\n- Tom  \n- Mary  \n- Lisa  \n- Luke  \n- Lois  \n\nLook for patterns:\n\n1. **Gender pattern**  \n   - Tom: male  \n   - Luke: male  \n   - Mary: female  \n   - Lisa: female  \n   - Lois: female  \n\nThere are **two males** (Tom, Luke) and **three females** (Mary, Lisa, Lois).\n\n2. **Check for other patterns (letters, length, etc.)**  \n   - All are common first names.  \n   - Name lengths: Tom (3), Mary (4), Lisa (4), Luke (4), Lois (4).  \n   - Only Tom has 3 letters; the others have 4.  \n   - But the question is \u201cWhat does not fit in the group?\u201d with a single answer.\n\nWe have two plausible odd ones out:\n- By **length**, Tom is the only 3-letter name.  \n- By **gender majority**, Luke is the only other male among mostly females, but that gives two males vs three females, not a single clear standout.\n\nThe **strongest single odd-one-out** is the one that differs uniquely by a simple property: name length.\n\nSo the name that does not fit is:\n\nTom",
+    "parsed_prediction": "3",
     "correct": false,
-    "latency": 2.87115216255188
+    "latency": 3.114896059036255
   },
   {
     "id": "40",
@@ -474,10 +474,10 @@
     "ground_truth": "Cashew",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, list the items:\n\n- Apple  \n- Lemon  \n- Cashew  \n- Orange  \n- Banana  \n\nStep 1: Check if they are all fruits.  \n- Apple: fruit  \n- Lemon: fruit  \n- Orange: fruit  \n- Banana: fruit  \n- Cashew: the *cashew nut* is a seed; it comes from the cashew apple, but we usually refer to cashew as a nut, not a common edible fruit like the others.\n\nStep 2: Check common category of everyday usage.  \n- Apple, Lemon, Orange, Banana: commonly eaten as whole fruits.  \n- Cashew: commonly eaten as a nut/seed, not as a fruit.\n\nTherefore, the one that does not fit with the others as a typical fruit is:\n\nCashew",
-    "parsed_prediction": "2",
+    "raw_output": "First, list the items:\n\n- Apple  \n- Lemon  \n- Cashew  \n- Orange  \n- Banana  \n\nStep 1: Check if they are fruits.  \n- Apple: fruit  \n- Lemon: fruit  \n- Cashew: the cashew *nut* is a seed; the cashew *apple* is a fruit, but commonly we refer to the nut.  \n- Orange: fruit  \n- Banana: fruit  \n\nStep 2: Check common everyday category.  \nIn everyday language:\n- Apple, Lemon, Orange, Banana are all commonly known and eaten as fruits.  \n- Cashew is commonly known and eaten as a nut.\n\nStep 3: Decide which one does not fit.  \nFour are commonly recognized fruits; one is commonly recognized as a nut.\n\nResult: Cashew",
+    "parsed_prediction": "3",
     "correct": false,
-    "latency": 2.834895133972168
+    "latency": 2.6402668952941895
   },
   {
     "id": "41",
@@ -486,10 +486,10 @@
     "ground_truth": "5",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. The square has 4 corners.  \n2. The triangle has 3 corners.  \n3. You \u201cput a triangle on a square\u201d with all side lengths equal, so think of placing the triangle on top of one side of the square, sharing that side.  \n4. The shared side\u2019s two endpoints (corners) are counted only once in the outline of the new combined shape.  \n5. So total corners = corners of square + corners of triangle \u2212 shared corners  \n6. That is 4 + 3 \u2212 2 = 5  \n\nResult: 5",
+    "raw_output": "1. The square has 4 corners.\n\n2. The triangle has 3 corners.\n\n3. We \u201cput a triangle on a square\u201d with all sides the same length, so we imagine the triangle sitting on top of the square, sharing exactly one full side (since the side lengths match).\n\n4. When two shapes share a full side, the two corners at the ends of that side are not new corners; they are the same points for both shapes.\n\n5. So we start with 4 (square) + 3 (triangle) = 7 corners total, then subtract the 2 shared corners (since they were counted twice).\n\n6. 7 \u2212 2 = 5\n\nresult: 5",
     "parsed_prediction": "5",
     "correct": true,
-    "latency": 2.2279469966888428
+    "latency": 2.61417555809021
   },
   {
     "id": "42",
@@ -498,10 +498,10 @@
     "ground_truth": "3",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, clarify the shapes:\n\n1. An isosceles triangle has 3 corners (vertices).\n2. A circle has 0 corners.\n\nNow combine them:\n\n3 (triangle corners) + 0 (circle corners) = 3\n\nResult: 3",
+    "raw_output": "First, identify the shapes:\n\n1. An isosceles triangle has 3 corners (vertices).\n2. A circle has 0 corners.\n\nNext, combine them:\n\n3 (from the triangle) + 0 (from the circle) = 3\n\nSo the total number of corners you see is 3\n\n3",
     "parsed_prediction": "3",
     "correct": true,
-    "latency": 2.253026008605957
+    "latency": 1.5038909912109375
   },
   {
     "id": "43",
@@ -510,10 +510,10 @@
     "ground_truth": "3",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Consider 1 circle:  \n   - It divides the plane into 2 regions (inside and outside).\n\n2. Now add a 2nd circle:  \n   - To maximize the number of regions, the two circles should intersect in 2 distinct points (not be disjoint and not coincide).\n\n3. Two intersecting circles cut each other into arcs, and the plane is divided into:  \n   - 1 region outside both circles  \n   - 2 regions inside exactly one of the circles (one for each circle)  \n   - 1 region inside both circles (the lens-shaped overlap)\n\n4. Counting these:  \n   - Total regions = 4\n\nresult: 4",
+    "raw_output": "1. With 1 circle, the plane is divided into 2 regions: inside and outside.\n\n2. When you add a second circle, to maximize the number of regions, it should intersect the first circle in 2 distinct points (not be separate and not coincide).\n\n3. Those 2 intersection points split each circle into 2 arcs, and together they partition the plane into:\n   - 1 region outside both circles,\n   - 2 regions inside exactly one of the circles (one for each circle),\n   - 1 region inside both circles (the lens-shaped overlap).\n\n4. Counting these gives a total of 4 regions.\n\nResult: 4",
     "parsed_prediction": "4",
     "correct": false,
-    "latency": 2.5589749813079834
+    "latency": 2.210977792739868
   },
   {
     "id": "44",
@@ -522,10 +522,10 @@
     "ground_truth": "2",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We want the maximum number of regions a single straight line can divide an octagon into.\n\n1. A straight line divides the plane into 2 half-planes.\n2. If the line does not intersect the octagon at all, the octagon remains 1 region.\n3. If the line intersects the octagon, it can enter and exit the polygon, cutting it into two parts.\n4. A straight line can intersect a convex polygon (like a regular octagon) in at most 2 points.\n5. Therefore, at most, the line can split the octagon into 2 regions.\n\nSo the answer is: 2",
+    "raw_output": "We want to know how many different *regions* (sections) an octagon can be split into using just 1 straight line.\n\nStep 1:  \nDraw an octagon (8-sided polygon).\n\nStep 2:  \nDraw a single straight line that intersects the octagon.\n\nStep 3:  \nTo maximize the number of sections, the line should pass completely through the octagon, entering one side and exiting another, not just touching a vertex or grazing along an edge.\n\nStep 4:  \nAny straight line that properly cuts through a convex polygon (like a regular octagon) will divide it into exactly 2 regions.\n\nStep 5:  \nThere is no way for a single straight line to create more than 2 regions in a convex shape.\n\nSo the number of sections is 2",
     "parsed_prediction": "2",
     "correct": true,
-    "latency": 2.1608121395111084
+    "latency": 3.147359848022461
   },
   {
     "id": "45",
@@ -534,10 +534,10 @@
     "ground_truth": "27",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First clarify the question:  \nWe want to know how many different numbers can be formed using the digits 1, 2, and 3, where:\n\n- We may use digits more than once.\n- We are not given a limit on the length of the number.\n\nIf there is no limit on length, then:\n\n- 1-digit numbers: 3 possibilities \u2192 1, 2, 3  \n- 2-digit numbers: each position has 3 choices \u2192 3 \u00d7 3 = 9  \n- 3-digit numbers: 3 \u00d7 3 \u00d7 3 = 27  \n- 4-digit numbers: 3\u2074 = 81  \n- And so on, forever.\n\nSo the total number of different numbers is:\n\n3 + 3\u00b2 + 3\u00b3 + 3\u2074 + \u2026  \n\nThis is an infinite geometric series with ratio 3 (> 1), so it does not converge to a finite value.\n\nTherefore, the number of different numbers you can create is infinite",
-    "parsed_prediction": "1",
-    "correct": false,
-    "latency": 2.962744951248169
+    "raw_output": "First clarify the question:  \nWe want to know how many different numbers can be formed using the digits 1, 2, and 3, where digits may be repeated.  \nWe also assume we are forming **3-digit numbers** (since 1-, 2-, 3-, ... digit numbers would be infinitely many).\n\nStep 1:  \nA 3-digit number has three positions:  \n- Hundreds place  \n- Tens place  \n- Units place  \n\nStep 2:  \nFor each position, we can choose any of the digits {1, 2, 3}.  \nSo:  \n- Hundreds place: 3 choices (1, 2, or 3)  \n- Tens place: 3 choices (1, 2, or 3)  \n- Units place: 3 choices (1, 2, or 3)  \n\nStep 3:  \nTotal different 3-digit numbers =  \n3 (choices for first digit) \u00d7 3 (choices for second digit) \u00d7 3 (choices for third digit)  \n= 3 \u00d7 3 \u00d7 3  \n= 27  \n\nresult",
+    "parsed_prediction": "27",
+    "correct": true,
+    "latency": 3.2724099159240723
   },
   {
     "id": "46",
@@ -546,10 +546,10 @@
     "ground_truth": "6",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, list all the possible different arrangements (permutations) of the digits 5, 7, and 9, using each digit exactly once.\n\nWe are forming 3-digit numbers with 3 distinct digits.\n\nThe number of such permutations is:\n3! = 3 \u00d7 2 \u00d7 1 = 6\n\nTo see them explicitly:\n- 579  \n- 597  \n- 759  \n- 795  \n- 957  \n- 975  \n\nSo, the total number of different numbers is 6",
+    "raw_output": "We have three different digits: 5, 7, and 9.  \nWe want to form numbers using each digit only once.\n\nStep 1: Decide how many digits each number will have.  \nSince we are \u201ccombining the digits 5, 7 and 9\u201d and can use each only once, we interpret this as forming a 3-digit number using all three digits.\n\nStep 2: Count the permutations of 3 distinct digits.  \nNumber of different 3-digit numbers = 3!  \n3! = 3 \u00d7 2 \u00d7 1 = 6\n\nStep 3: List them to confirm:  \n579, 597, 759, 795, 957, 975\n\nAll are different, and there are 6 of them.\n\nResult: 6",
     "parsed_prediction": "6",
     "correct": true,
-    "latency": 2.0179009437561035
+    "latency": 3.0301120281219482
   },
   {
     "id": "47",
@@ -558,10 +558,10 @@
     "ground_truth": "256",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re combining digits 1, 2, 3, and 4, and we\u2019re allowed to reuse digits.\n\nWe need to clarify how many-digit numbers we are forming. Usually, this type of question means \u201cform all possible 4-digit numbers\u201d using the digits 1, 2, 3, and 4, with repetition allowed.\n\nStep 1: Identify choices per position  \nEach of the 4 positions (thousands, hundreds, tens, ones) can be any of the 4 digits (1, 2, 3, 4).\n\nStep 2: Count total combinations  \nNumber of different 4-digit numbers =  \n4 choices for the first digit \u00d7  \n4 choices for the second digit \u00d7  \n4 choices for the third digit \u00d7  \n4 choices for the fourth digit  \n\nThat is:  \n4 \u00d7 4 \u00d7 4 \u00d7 4 = 4\u2074 = 256\n\nresult: 256",
+    "raw_output": "First clarify the question:  \nWe want to know how many different numbers can be formed using the digits 1, 2, 3, and 4, where digits can be repeated.  \nWe also need to decide how many digits long the numbers are.\n\nUsually, in this type of problem, \u201cnumbers\u201d means numbers with a fixed length, often 4-digit numbers, especially since 4 digits are given.\n\nAssume we are forming 4-digit numbers using digits {1, 2, 3, 4}, with repetition allowed.\n\nStep 1: Count choices for each position  \n- Thousands place: 4 choices (1, 2, 3, or 4)  \n- Hundreds place: 4 choices  \n- Tens place: 4 choices  \n- Ones place: 4 choices  \n\nStep 2: Multiply the choices  \nTotal different 4-digit numbers =  \n4 \u00d7 4 \u00d7 4 \u00d7 4 = 4\u2074 = 256\n\nResult: 256",
     "parsed_prediction": "256",
     "correct": true,
-    "latency": 2.3392550945281982
+    "latency": 3.01344895362854
   },
   {
     "id": "48",
@@ -570,10 +570,10 @@
     "ground_truth": "120",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have 5 different digits: 1, 2, 3, 4, 5.  \nWe want to form numbers using all of them, each used exactly once.\n\nStep 1:  \nFor the first digit of the number, we can choose any of the 5 digits.\n\nStep 2:  \nFor the second digit, we have 4 remaining choices (since one is already used).\n\nStep 3:  \nFor the third digit, we have 3 remaining choices.\n\nStep 4:  \nFor the fourth digit, we have 2 remaining choices.\n\nStep 5:  \nFor the fifth digit, we have 1 remaining choice.\n\nStep 6:  \nMultiply the number of choices:  \n5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120\n\nresult: 120",
+    "raw_output": "We have 5 different digits: 1, 2, 3, 4, 5.  \nWe want to form numbers using all of them, with no repetition.\n\nStep 1:  \nFor the first digit of the number, we can choose any of the 5 digits.\n\nStep 2:  \nFor the second digit, we have 4 remaining choices (since one digit is already used).\n\nStep 3:  \nFor the third digit, we have 3 remaining choices.\n\nStep 4:  \nFor the fourth digit, we have 2 remaining choices.\n\nStep 5:  \nFor the fifth digit, we have 1 remaining choice.\n\nStep 6:  \nMultiply the number of choices:  \n5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120\n\nResult: 120",
     "parsed_prediction": "120",
     "correct": true,
-    "latency": 2.837376832962036
+    "latency": 2.4157280921936035
   },
   {
     "id": "49",
@@ -582,10 +582,10 @@
     "ground_truth": "Lisa",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have three people in a line: Tom, Lisa, and Mary.\n\n1. \u201cTom is next to Lisa\u201d means Tom stands immediately beside Lisa.\n2. \u201cMary is next to Lisa\u201d means Mary also stands immediately beside Lisa.\n3. In a line of three people, the only way for one person to be next to both of the others is to stand in the middle.\n4. Therefore, Lisa must be between Tom and Mary.\n\nSo the one in the middle is Lisa",
+    "raw_output": "We have three people in a line: Tom, Lisa, and Mary.\n\n1. \u201cTom is next to Lisa\u201d means Tom stands immediately beside Lisa.\n2. \u201cMary is next to Lisa\u201d means Mary also stands immediately beside Lisa.\n3. In a line of three, the only way for one person to be next to both of the others is to stand in the middle.\n4. Therefore, Lisa must be between Tom and Mary.\n\nResult: Lisa",
     "parsed_prediction": "4",
     "correct": false,
-    "latency": 2.2519402503967285
+    "latency": 1.8630342483520508
   },
   {
     "id": "50",
@@ -594,10 +594,10 @@
     "ground_truth": "Tom",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. We have four people: Tom, Lisa, Mark, Mary, in a line.\n\n2. \u201cLisa is next to only one person\u201d means Lisa must be at one end of the line (position 1 or 4), because only end positions have exactly one neighbor.\n\n3. \u201cMary is only next to Mark\u201d means:\n   - Mary must be next to Mark.\n   - Mary cannot be next to anyone else.\n   So Mary must also be at an end, with Mark directly beside her.\n\n4. Therefore, both Lisa and Mary are at the two ends, and Mark is next to Mary at one end. Tom must be the remaining person in the middle.\n\n5. The only possible arrangements (up to reversal) are:\n   - Lisa \u2013 Tom \u2013 Mark \u2013 Mary  \n   - Mary \u2013 Mark \u2013 Tom \u2013 Lisa  \n\n6. In both valid orders, the person between Mark and Lisa is Tom.\n\nTom",
-    "parsed_prediction": "6",
+    "raw_output": "1. We have four people: Tom, Lisa, Mark, Mary, in a line.\n\n2. \u201cLisa is next to only one person\u201d means Lisa must be at one end of the line (first or last).\n\n3. \u201cMary is only next to Mark\u201d means:\n   - Mary is also at an end (otherwise she\u2019d have two neighbors),\n   - and her only neighbor is Mark, so Mark must be right next to her.\n\n4. So one end pair must be \u201cMary\u2013Mark\u201d or \u201cMark\u2013Mary\u201d.\n\n5. Lisa is at the other end. So the remaining person, Tom, must be between Lisa and Mark.\n\n6. Possible valid orders (checking both ends):\n   - Lisa \u2013 Tom \u2013 Mark \u2013 Mary\n   - Mary \u2013 Mark \u2013 Tom \u2013 Lisa\n\n7. In both valid orders, the person between Mark and Lisa is Tom.\n\nTom",
+    "parsed_prediction": "7",
     "correct": false,
-    "latency": 4.439117670059204
+    "latency": 3.403690814971924
   },
   {
     "id": "51",
@@ -606,10 +606,10 @@
     "ground_truth": "Tom",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. We have four humans in a line: Tom, Lisa, Mark, Mary.\n\n2. In a line of four, the two people in the middle each have two neighbors; the people at the ends each have only one neighbor.\n\n3. The statement \u201cLisa and Mary are next to two humans each\u201d means Lisa and Mary must be the two middle positions.\n\n4. So the order (from left to right) must be:\n   - Someone \u2013 Lisa \u2013 Mary \u2013 Someone  \n   or  \n   - Someone \u2013 Mary \u2013 Lisa \u2013 Someone\n\n5. We are also told: \u201cMark is next to Lisa.\u201d\n\n6. In the pattern Someone \u2013 Lisa \u2013 Mary \u2013 Someone:\n   - Lisa\u2019s neighbors are the first person and Mary.\n   - Mark must be one of Lisa\u2019s neighbors, so Mark is either the first person or Mary.\n\n7. In the pattern Someone \u2013 Mary \u2013 Lisa \u2013 Someone:\n   - Lisa\u2019s neighbors are Mary and the last person.\n   - Mark must be one of these, so Mark is either Mary or the last person.\n\n8. Mark cannot be Mary (they are distinct people), so Mark must be at one of the ends in either pattern.\n\n9. That leaves Tom as the remaining person, who must occupy the other end.\n\n10. Now check who is next to Mary in each valid arrangement:\n\n    - Case A: Tom \u2013 Lisa \u2013 Mary \u2013 Mark  \n      Mary\u2019s neighbors: Lisa and Mark\n\n    - Case B: Mark \u2013 Lisa \u2013 Mary \u2013 Tom  \n      Mary\u2019s neighbors: Lisa and Tom\n\n    - Case C: Tom \u2013 Mary \u2013 Lisa \u2013 Mark  \n      Mary\u2019s neighbors: Tom and Lisa\n\n    - Case D: Mark \u2013 Mary \u2013 Lisa \u2013 Tom  \n      Mary\u2019s neighbors: Mark and Lisa\n\n11. In every valid arrangement, Lisa is always next to Mary.\n\nResult: **Lisa**",
-    "parsed_prediction": "11",
+    "raw_output": "We\u2019re told:\n\n- There are four humans in a line: Tom, Lisa, Mark, Mary.  \n- Lisa and Mary are each next to two humans.  \n- Mark is next to Lisa.  \n- We must find who is next to Mary.\n\nStep 1: Understand \u201cnext to two humans\u201d  \nIn a line of four, only the two people in the middle have two neighbors. The people at the ends each have only one neighbor.  \nSo \u201cLisa and Mary are next to two humans each\u201d means Lisa and Mary must be the two middle positions.\n\nSo the order (from left to right) must be:\n[ ?, Lisa, Mary, ? ] or [ ?, Mary, Lisa, ? ]\n\nStep 2: Use \u201cMark is next to Lisa\u201d  \nMark must be in a position adjacent to Lisa.\n\nCase A: Order [ ?, Lisa, Mary, ? ]  \n- Lisa is in position 2, Mary in position 3.  \n- Lisa\u2019s neighbors: positions 1 and 3 \u2192 (Tom or Mark) and Mary.  \n- Mary\u2019s neighbors: positions 2 and 4 \u2192 Lisa and (Tom or Mark).  \n- Mark must be next to Lisa, so Mark is either position 1 or 3.  \nBut position 3 is Mary, so Mark must be position 1.  \nThen Tom is position 4.\n\nSo the line is: [Mark, Lisa, Mary, Tom].  \nMary\u2019s neighbors are Lisa and Tom.\n\nCase B: Order [ ?, Mary, Lisa, ? ]  \n- Mary is in position 2, Lisa in position 3.  \n- Lisa\u2019s neighbors: positions 2 and 4 \u2192 Mary and (Tom or Mark).  \n- Mark must be next to Lisa, so Mark is either position 2 or 4.  \nBut position 2 is Mary, so Mark must be position 4.  \nThen Tom is position 1.\n\nSo the line is: [Tom, Mary, Lisa, Mark].  \nMary\u2019s neighbors are Tom and Lisa.\n\nStep 3: Common conclusion  \nIn both valid arrangements, Mary is next to Tom and Lisa.\n\nAnswer: Tom and Lisa",
+    "parsed_prediction": "3",
     "correct": false,
-    "latency": 5.564575910568237
+    "latency": 4.953760147094727
   },
   {
     "id": "52",
@@ -618,10 +618,10 @@
     "ground_truth": "Tom",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have three people in a line: Tom, Lisa, Mary.\n\nStep 1:  \nList all possible orders of three distinct people:  \n1) Tom \u2013 Lisa \u2013 Mary  \n2) Tom \u2013 Mary \u2013 Lisa  \n3) Lisa \u2013 Tom \u2013 Mary  \n4) Lisa \u2013 Mary \u2013 Tom  \n5) Mary \u2013 Tom \u2013 Lisa  \n6) Mary \u2013 Lisa \u2013 Tom  \n\nStep 2:  \nApply the condition: Mary and Lisa are not next to each other.  \nSo we must remove any order where Mary and Lisa stand side by side.\n\nCheck each:\n\n1) Tom \u2013 Lisa \u2013 Mary  \nLisa and Mary are next to each other \u2192 not allowed.\n\n2) Tom \u2013 Mary \u2013 Lisa  \nMary and Lisa are next to each other \u2192 not allowed.\n\n3) Lisa \u2013 Tom \u2013 Mary  \nLisa and Mary are separated by Tom \u2192 allowed.\n\n4) Lisa \u2013 Mary \u2013 Tom  \nLisa and Mary are next to each other \u2192 not allowed.\n\n5) Mary \u2013 Tom \u2013 Lisa  \nMary and Lisa are separated by Tom \u2192 allowed.\n\n6) Mary \u2013 Lisa \u2013 Tom  \nMary and Lisa are next to each other \u2192 not allowed.\n\nStep 3:  \nThe only valid orders are:  \n- Lisa \u2013 Tom \u2013 Mary  \n- Mary \u2013 Tom \u2013 Lisa  \n\nIn both valid cases, the person in the middle is Tom.  \n\nTom",
+    "raw_output": "We have three humans in a line: Tom, Lisa, Mary.\n\nWe must place them in some order, with the condition:\n- Mary and Lisa are **not** next to each other.\n\nStep 1: List all possible orders of three people:\n1. Tom \u2013 Lisa \u2013 Mary  \n2. Tom \u2013 Mary \u2013 Lisa  \n3. Lisa \u2013 Tom \u2013 Mary  \n4. Lisa \u2013 Mary \u2013 Tom  \n5. Mary \u2013 Tom \u2013 Lisa  \n6. Mary \u2013 Lisa \u2013 Tom  \n\nStep 2: Eliminate orders where Mary and Lisa are next to each other.\n\nCheck each:\n\n1. Tom \u2013 Lisa \u2013 Mary  \n   - Lisa and Mary are adjacent \u2192 not allowed.\n\n2. Tom \u2013 Mary \u2013 Lisa  \n   - Mary and Lisa are adjacent \u2192 not allowed.\n\n3. Lisa \u2013 Tom \u2013 Mary  \n   - Lisa and Mary are **not** adjacent \u2192 allowed.\n\n4. Lisa \u2013 Mary \u2013 Tom  \n   - Lisa and Mary are adjacent \u2192 not allowed.\n\n5. Mary \u2013 Tom \u2013 Lisa  \n   - Mary and Lisa are **not** adjacent \u2192 allowed.\n\n6. Mary \u2013 Lisa \u2013 Tom  \n   - Mary and Lisa are adjacent \u2192 not allowed.\n\nStep 3: Look at the allowed orders:\n- Lisa \u2013 Tom \u2013 Mary  \n- Mary \u2013 Tom \u2013 Lisa  \n\nIn both valid arrangements, the person in the middle is the same: Tom.\n\nTom",
     "parsed_prediction": "3",
     "correct": false,
-    "latency": 3.515083074569702
+    "latency": 2.6627049446105957
   },
   {
     "id": "53",
@@ -630,10 +630,10 @@
     "ground_truth": "WELCOME",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re given:\n\n`W ? E ? L ? C ? O ? M ? E`\n\nWe want to find the hidden word by figuring out what fits between the letters.\n\n1. First, look at the visible letters in order:\n   - W E L C O M E\n\n2. These letters already form the word:\n   - WELCOME\n\n3. The question marks are just placeholders between each letter and don\u2019t change the sequence of actual letters.\n\nSo the hidden word is:\n\nWELCOME",
-    "parsed_prediction": "3",
+    "raw_output": "We\u2019re given:\n\n`W ? E ? L ? C ? O ? M ? E`\n\nThink of a common English word that:\n\n- Starts with W and ends with E  \n- Has the letters E, L, C, O, M in order inside it  \n- Has the same number of letters as the pattern (13 characters total: 7 letters + 6 unknowns)\n\nA very natural candidate is:\n\n**W E L C O M E**\n\nNow check if we can \u201cstretch\u201d WELCOME to fit the pattern with extra letters between each:\n\nPattern:  \nW ? E ? L ? C ? O ? M ? E  \n\nFill in with \u201cWELCOME\u201d plus extra letters:\n\n- W (given)\n- ? = E  \n- E (given)  \n- ? = L  \n- L (given)  \n- ? = C  \n- C (given)  \n- ? = O  \n- O (given)  \n- ? = M  \n- M (given)  \n- ? = E  \n- E (given)\n\nSo the hidden word, reading only the fixed letters, is:\n\nWELCOME",
+    "parsed_prediction": "6",
     "correct": false,
-    "latency": 2.3627688884735107
+    "latency": 2.532461166381836
   },
   {
     "id": "54",
@@ -642,10 +642,10 @@
     "ground_truth": "HIDDEN",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Look at the pattern:  \n\nH22I22D22D22E22N  \n\nBetween each pair of letters there is \u201c22\u201d. If you remove all the \u201c22\u201d parts, you are left with the letters:\n\nH I D D E N  \n\nWhich spells:\n\nHIDDEN",
+    "raw_output": "We\u2019re given:\n\nH22I22D22D22E22N  \n\nThink of it as the word \u201cHIDDEN\u201d with \u201c22\u201d inserted between each letter:\n\nH 22 I 22 D 22 D 22 E 22 N  \n\nSo the hidden word is:\n\nHIDDEN",
     "parsed_prediction": "22",
     "correct": false,
-    "latency": 1.5516691207885742
+    "latency": 1.6559967994689941
   },
   {
     "id": "55",
@@ -654,10 +654,10 @@
     "ground_truth": "CHRISTMAS",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re given:  \n\n**CH4RI4ST4MA4S**\n\nWe want to find the hidden word.\n\nStep 1: Look at the structure  \nIt looks very close to the word **CHRISTMAS**, but with extra letters and 4\u2019s inserted.\n\nWrite it out with positions:\n\nC H 4 R I 4 S T 4 M A 4 S  \n1 2 3 4 5 6 7 8 9 10 11 12 13\n\nStep 2: Try removing all the 4\u2019s  \nRemove every \u201c4\u201d:\n\n- From **CH4RI4ST4MA4S**  \n- Remove 4\u2019s \u2192 **CHRISTMAS**\n\nStep 3: Check if that\u2019s a valid word  \n\u201cCHRISTMAS\u201d is a valid English word and fits the pattern of being \u201chidden\u201d inside the original string by inserting 4\u2019s.\n\nSo the hidden word is:\n\n**CHRISTMAS**",
+    "raw_output": "We\u2019re given:  \n\n**CH4RI4ST4MA4S**\n\nStep 1: Notice the pattern  \nThe string looks like the word **CHRISTMAS**, but with extra letters and the number **4** inserted several times.\n\nStep 2: Remove all the 4s  \nTake out every **4**:\n\n- CH4RI4ST4MA4S \u2192 CHRISTMAS\n\nStep 3: Check what remains  \nAfter removing the 4s, the remaining letters spell:\n\n**CHRISTMAS**\n\nSo the hidden word is:\n\n**CHRISTMAS**",
     "parsed_prediction": "4",
     "correct": false,
-    "latency": 2.851619005203247
+    "latency": 1.9950978755950928
   },
   {
     "id": "56",
@@ -666,10 +666,10 @@
     "ground_truth": "HIDDEN",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Let\u2019s go step by step and reason it out.\n\nWe have the string:\n\nS C C C H C O C O C L\n\n1. First, notice that many of these are chemical element symbols:\n   - H = Hydrogen  \n   - C = Carbon  \n   - O = Oxygen  \n   - Cl = Chlorine  \n\n2. The string can be split into element symbols like this:\n   - S | C | C | C | H | C | O | C | O | Cl  \n\n3. Now look at the *sequence* of element symbols:\n   - S, C, C, C, H, C, O, C, O, Cl  \n\n4. Focus on the *letters* themselves and how they might form a word.  \n   The key is to see that the pattern of letters can be rearranged or interpreted as a familiar word related to chemistry.\n\n5. The letters present are:\n   - S, C, C, C, H, C, O, C, O, C, L  \n   That is: S, C, C, C, C, C, H, O, O, L  \n\n6. These can be rearranged to form the word:\n\nSCHOOL\n\nSo, the hidden word is:\n\nSCHOOL",
-    "parsed_prediction": "6",
+    "raw_output": "We\u2019re given:  \n\nS C C C H C O C O C L  \n\nThink of each letter as a chemical element symbol:\n\n- **S** = Sulfur  \n- **C** = Carbon  \n- **H** = Hydrogen  \n- **O** = Oxygen  \n- **Cl** = Chlorine  \n\nNow read them in order as element names:\n\n- S  \u2192 **SULFUR**  \n- C  \u2192 **CARBON**  \n- C  \u2192 **CARBON**  \n- C  \u2192 **CARBON**  \n- H  \u2192 **HYDROGEN**  \n- C  \u2192 **CARBON**  \n- O  \u2192 **OXYGEN**  \n- C  \u2192 **CARBON**  \n- O  \u2192 **OXYGEN**  \n- C  \u2192 **CARBON**  \n- Cl \u2192 **CHLORINE**\n\nNow take the **first letter** of each element\u2019s name:\n\n- Sulfur   \u2192 **S**  \n- Carbon   \u2192 **C**  \n- Carbon   \u2192 **C**  \n- Carbon   \u2192 **C**  \n- Hydrogen \u2192 **H**  \n- Carbon   \u2192 **C**  \n- Oxygen   \u2192 **O**  \n- Carbon   \u2192 **C**  \n- Oxygen   \u2192 **O**  \n- Carbon   \u2192 **C**  \n- Chlorine \u2192 **C**\n\nThat gives:  \n\nS C C C H C O C O C C  \n\nRearrange these letters to see if they form a meaningful English word.  \nThey can be rearranged to:\n\n**CHOCOLATE**  \n\nSo the hidden word is:\n\n**CHOCOLATE**",
+    "parsed_prediction": "We\u2019re given:  \n\nS C C C H C O C O C L  \n\nThink of each letter as a chemical element symbol:\n\n- **S** = Sulfur  \n- **C** = Carbon  \n- **H** = Hydrogen  \n- **O** = Oxygen  \n- **Cl** = Chlorine  \n\nNow read them in order as element names:\n\n- S  \u2192 **SULFUR**  \n- C  \u2192 **CARBON**  \n- C  \u2192 **CARBON**  \n- C  \u2192 **CARBON**  \n- H  \u2192 **HYDROGEN**  \n- C  \u2192 **CARBON**  \n- O  \u2192 **OXYGEN**  \n- C  \u2192 **CARBON**  \n- O  \u2192 **OXYGEN**  \n- C  \u2192 **CARBON**  \n- Cl \u2192 **CHLORINE**\n\nNow take the **first letter** of each element\u2019s name:\n\n- Sulfur   \u2192 **S**  \n- Carbon   \u2192 **C**  \n- Carbon   \u2192 **C**  \n- Carbon   \u2192 **C**  \n- Hydrogen \u2192 **H**  \n- Carbon   \u2192 **C**  \n- Oxygen   \u2192 **O**  \n- Carbon   \u2192 **C**  \n- Oxygen   \u2192 **O**  \n- Carbon   \u2192 **C**  \n- Chlorine \u2192 **C**\n\nThat gives:  \n\nS C C C H C O C O C C  \n\nRearrange these letters to see if they form a meaningful English word.  \nThey can be rearranged to:\n\n**CHOCOLATE**  \n\nSo the hidden word is:\n\n**CHOCOLATE**",
     "correct": false,
-    "latency": 3.553607940673828
+    "latency": 2.8943848609924316
   },
   {
     "id": "57",
@@ -678,10 +678,10 @@
     "ground_truth": "3",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First write the sentence:\n\n\u201cHow many words in this sentence have three or less letters?\u201d\n\nNow count the letters in each word (ignore punctuation):\n\n1. How \u2013 3 letters  \n2. many \u2013 4 letters  \n3. words \u2013 5 letters  \n4. in \u2013 2 letters  \n5. this \u2013 4 letters  \n6. sentence \u2013 8 letters  \n7. have \u2013 4 letters  \n8. three \u2013 5 letters  \n9. or \u2013 2 letters  \n10. less \u2013 4 letters  \n11. letters \u2013 7 letters  \n\nNow select only those with three or fewer letters:\n\n- How (3)  \n- in (2)  \n- or (2)  \n\nThat makes 3 such words.\n\n3",
+    "raw_output": "First rewrite the sentence and separate the words:\n\n\"How many words in this sentence have three or less letters?\"\n\nList the words one by one:\n\n1. How  \n2. many  \n3. words  \n4. in  \n5. this  \n6. sentence  \n7. have  \n8. three  \n9. or  \n10. less  \n11. letters\n\nNow count how many of these have three or fewer letters:\n\n1. How \u2192 3 letters \u2192 count  \n2. many \u2192 4 letters \u2192 skip  \n3. words \u2192 5 letters \u2192 skip  \n4. in \u2192 2 letters \u2192 count  \n5. this \u2192 4 letters \u2192 skip  \n6. sentence \u2192 8 letters \u2192 skip  \n7. have \u2192 4 letters \u2192 skip  \n8. three \u2192 5 letters \u2192 skip  \n9. or \u2192 2 letters \u2192 count  \n10. less \u2192 4 letters \u2192 skip  \n11. letters \u2192 7 letters \u2192 skip  \n\nWords with three or fewer letters:  \n- How  \n- in  \n- or  \n\nThat makes a total of:\n\n3",
     "parsed_prediction": "3",
     "correct": true,
-    "latency": 2.1165220737457275
+    "latency": 2.2377431392669678
   },
   {
     "id": "58",
@@ -690,10 +690,10 @@
     "ground_truth": "13",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First rewrite the sentence clearly:\n\n\"How many words are in this sentence, including this part after the comma?\"\n\nNow count each word:\n\n1. How  \n2. many  \n3. words  \n4. are  \n5. in  \n6. this  \n7. sentence,  \n8. including  \n9. this  \n10. part  \n11. after  \n12. the  \n13. comma?\n\nThere are 13 words.\n\n13",
+    "raw_output": "First rewrite the sentence clearly:\n\n\u201cHow many words are in this sentence, including this part after the comma?\u201d\n\nNow count each word:\n\n1. How  \n2. many  \n3. words  \n4. are  \n5. in  \n6. this  \n7. sentence,  \n8. including  \n9. this  \n10. part  \n11. after  \n12. the  \n13. comma?\n\nThere are 13 words in the sentence.\n\n13",
     "parsed_prediction": "13",
     "correct": true,
-    "latency": 2.275657892227173
+    "latency": 1.4558520317077637
   },
   {
     "id": "59",
@@ -702,10 +702,10 @@
     "ground_truth": "0",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First rewrite the sentence clearly:\n\n\u201cHow many words in this sentence start with the letter thats after m in the alphabet?\u201d\n\nWe are asked about the sentence itself, so list its words:\n\n1. How  \n2. many  \n3. words  \n4. in  \n5. this  \n6. sentence  \n7. start  \n8. with  \n9. the  \n10. letter  \n11. thats  \n12. after  \n13. m  \n14. in  \n15. the  \n16. alphabet?\n\nThe letter after m in the alphabet is n.\n\nNow count words that start with n:\n\n- None of the listed words begin with n.\n\nSo the number of such words is:\n\n0",
+    "raw_output": "First rewrite the sentence clearly:\n\n\u201cHow many words in this sentence start with the letter thats after m in the alphabet?\u201d\n\nWe need to:\n\n1. Identify the letter after \u201cm\u201d in the alphabet.  \n   - Alphabet segment: \u2026 j, k, l, m, **n**, o, p \u2026  \n   - So the letter after m is **n**.\n\n2. List all the words in the sentence:  \n   - How  \n   - many  \n   - words  \n   - in  \n   - this  \n   - sentence  \n   - start  \n   - with  \n   - the  \n   - letter  \n   - thats  \n   - after  \n   - m  \n   - in  \n   - the  \n   - alphabet?\n\n3. Count how many of these words start with **n**.  \n   - None of the words begin with the letter n.\n\n4. Therefore, the number of such words is:\n\n0",
     "parsed_prediction": "0",
     "correct": true,
-    "latency": 1.8103721141815186
+    "latency": 2.491550922393799
   },
   {
     "id": "60",
@@ -714,10 +714,10 @@
     "ground_truth": "10",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First rewrite the sentence and split it into words:\n\n\"How many words in this sentence have more than two letters?\"\n\nWords (ignoring the question mark):\n1. How  \n2. many  \n3. words  \n4. in  \n5. this  \n6. sentence  \n7. have  \n8. more  \n9. than  \n10. two  \n11. letters  \n\nNow count only the words with more than two letters:\n\n1. How (3 letters)  \n2. many (4)  \n3. words (5)  \n4. this (4)  \n5. sentence (8)  \n6. have (4)  \n7. more (4)  \n8. than (4)  \n9. two (3)  \n10. letters (7)\n\nThat is 10 words.\n\n10",
+    "raw_output": "First, write the sentence:\n\n\"How many words in this sentence have more than two letters?\"\n\nNow count word by word, checking if each has more than two letters:\n\n1. How \u2192 3 letters \u2192 count  \n2. many \u2192 4 letters \u2192 count  \n3. words \u2192 5 letters \u2192 count  \n4. in \u2192 2 letters \u2192 do not count  \n5. this \u2192 4 letters \u2192 count  \n6. sentence \u2192 8 letters \u2192 count  \n7. have \u2192 4 letters \u2192 count  \n8. more \u2192 4 letters \u2192 count  \n9. than \u2192 4 letters \u2192 count  \n10. two \u2192 3 letters \u2192 count  \n11. letters \u2192 7 letters \u2192 count  \n\nNow add the counted ones:\n\n1 (How)  \n+ 1 (many) = 2  \n+ 1 (words) = 3  \n+ 1 (this) = 4  \n+ 1 (sentence) = 5  \n+ 1 (have) = 6  \n+ 1 (more) = 7  \n+ 1 (than) = 8  \n+ 1 (two) = 9  \n+ 1 (letters) = 10  \n\n10",
     "parsed_prediction": "10",
     "correct": true,
-    "latency": 3.3490278720855713
+    "latency": 3.3098201751708984
   },
   {
     "id": "61",
@@ -726,10 +726,10 @@
     "ground_truth": "in",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Step 1: Write the sentence clearly:  \n`What word, in this sentence is after the comma?`\n\nStep 2: Identify the comma:  \nThe comma is after the word `word`.\n\nStep 3: Find the word immediately after the comma:  \nThe sequence around the comma is: `word, in this...`  \nSo the word after the comma is `in`.\n\nin",
-    "parsed_prediction": "3",
+    "raw_output": "Step 1: Write the sentence clearly.\n\nSentence:  \n`What word, in this sentence is after the comma?`\n\nStep 2: Identify the comma.\n\nThe comma is after the word `word`.\n\nSo we have:  \n`What word, in this sentence is after the comma?`  \n          \u2191 comma\n\nStep 3: Find the word immediately after the comma.\n\nThe word right after the comma is `in`.\n\nStep 4: Provide the result as the last word of the answer:\n\nin",
+    "parsed_prediction": "4",
     "correct": false,
-    "latency": 1.5385231971740723
+    "latency": 1.6752278804779053
   },
   {
     "id": "62",
@@ -738,10 +738,10 @@
     "ground_truth": "last",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Step 1: Identify the sentence in the question:  \n\u201cWhat word in this sentence is in the second to last position?\u201d\n\nStep 2: List the words in order:  \n1. What  \n2. word  \n3. in  \n4. this  \n5. sentence  \n6. is  \n7. in  \n8. the  \n9. second  \n10. to  \n11. last  \n12. position?\n\nStep 3: The last word (12th) is \u201cposition?\u201d.  \nThe second to last word (11th) is \u201clast\u201d.\n\nlast",
-    "parsed_prediction": "11",
+    "raw_output": "We need the second-to-last word **in the question sentence**:\n\n\u201c**What word in this sentence is in the second to last position?**\u201d\n\n1. List the words in order:  \n   1) What  \n   2) word  \n   3) in  \n   4) this  \n   5) sentence  \n   6) is  \n   7) in  \n   8) the  \n   9) second  \n   10) to  \n   11) last  \n   12) position\n\n2. The last word is \u201cposition\u201d.  \n3. The second-to-last word is \u201clast\u201d.\n\nlast",
+    "parsed_prediction": "3",
     "correct": false,
-    "latency": 1.8347349166870117
+    "latency": 1.7769620418548584
   },
   {
     "id": "63",
@@ -750,10 +750,10 @@
     "ground_truth": "position",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, write the sentence clearly:\n\n\u201cWhat word, in this sentence comes in ninth position?\u201d\n\nNow count each word in order:\n\n1. What  \n2. word,  \n3. in  \n4. this  \n5. sentence  \n6. comes  \n7. in  \n8. ninth  \n9. position?\n\nThe word in the ninth position is:\n\nposition?",
+    "raw_output": "First, write the sentence and number each word in order:\n\n1. What  \n2. word,  \n3. in  \n4. this  \n5. sentence  \n6. comes  \n7. in  \n8. ninth  \n9. position?\n\nThe word in the ninth position is:\n\nposition?",
     "parsed_prediction": "9",
     "correct": false,
-    "latency": 1.547327995300293
+    "latency": 1.3715698719024658
   },
   {
     "id": "64",
@@ -762,10 +762,10 @@
     "ground_truth": "6",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, rewrite the question clearly:\n\n\u201cGive the digit of the position that the longest word in this string of words is at.\u201d\n\nWe need to treat the question itself as the \u201cstring of words\u201d and find:\n\n1. What the longest word is.\n2. What its position is (1st, 2nd, 3rd, \u2026).\n3. Then output that position as a digit.\n4. The last word of the answer must be that digit.\n\n---\n\nStep 1: List the words in order\n\nThe question text (ignoring punctuation) is:\n\n1. Give  \n2. the  \n3. digit  \n4. of  \n5. the  \n6. position  \n7. that  \n8. the  \n9. longest  \n10. word  \n11. in  \n12. this  \n13. string  \n14. of  \n15. words  \n16. is  \n17. at  \n\nSo there are 17 words.\n\n---\n\nStep 2: Find the length of each word\n\nCount letters in each:\n\n1. Give  \u2192 4  \n2. the   \u2192 3  \n3. digit \u2192 5  \n4. of    \u2192 2  \n5. the   \u2192 3  \n6. position \u2192 8  \n7. that  \u2192 4  \n8. the   \u2192 3  \n9. longest \u2192 7  \n10. word \u2192 4  \n11. in   \u2192 2  \n12. this \u2192 4  \n13. string \u2192 6  \n14. of   \u2192 2  \n15. words \u2192 5  \n16. is   \u2192 2  \n17. at   \u2192 2  \n\n---\n\nStep 3: Identify the longest word\n\nThe maximum length here is 8 letters: \u201cposition\u201d.\n\n\u201cposition\u201d is at position 6 in the list.\n\n---\n\nStep 4: Convert the position to a digit\n\nPosition 6 corresponds to the digit:\n\n6\n\n---\n\nStep 5: Ensure the last word is the result\n\nThe required final output is just the digit, as the last \u201cword\u201d:\n\n6",
+    "raw_output": "1. We need a specific string of words to analyze, but none is given in the question.  \n2. So we interpret the question as referring to the sentence itself:  \n   \u201cGive the digit of the position, that the longest word in this string of words is at?\u201d\n\n3. List the words and their lengths (counting only letters):\n   1) Give \u2192 4  \n   2) the \u2192 3  \n   3) digit \u2192 5  \n   4) of \u2192 2  \n   5) the \u2192 3  \n   6) position \u2192 8  \n   7) that \u2192 4  \n   8) the \u2192 3  \n   9) longest \u2192 7  \n   10) word \u2192 4  \n   11) in \u2192 2  \n   12) this \u2192 4  \n   13) string \u2192 6  \n   14) of \u2192 2  \n   15) words \u2192 5  \n   16) is \u2192 2  \n   17) at \u2192 2\n\n4. The longest word is \u201cposition\u201d with 8 letters.  \n5. Its position in the sequence is 6.  \n6. The question asks: \u201cGive the digit of the position \u2026\u201d \u2192 that digit is:\n\n6",
     "parsed_prediction": "6",
     "correct": true,
-    "latency": 5.242972135543823
+    "latency": 3.311861991882324
   },
   {
     "id": "65",
@@ -774,10 +774,10 @@
     "ground_truth": "yellow triangle",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, list the objects and relations given:\n\n1. There is a yellow triangle.\n2. Below the yellow triangle is a red object.  \n   - So the yellow triangle is above the red object.\n3. To the right of the red object is a blue circle.  \n   - This only tells us the blue circle\u2019s horizontal position relative to the red object, not vertical.\n\nWe are asked: \u201cWhat is above the red object?\u201d\n\nFrom step 2, the yellow triangle is above the red object.\n\nResult: triangle",
+    "raw_output": "First, list the objects and their relations:\n\n1. There is a yellow triangle.\n2. Below the yellow triangle is a red object.  \n   - So the yellow triangle is above the red object.\n3. To the right of the red object is a blue circle.  \n   - This does not change what is above the red object.\n\nFrom (2), the object above the red object is the yellow triangle.\n\nResult: triangle",
     "parsed_prediction": "2",
     "correct": false,
-    "latency": 1.9217112064361572
+    "latency": 1.5903642177581787
   },
   {
     "id": "66",
@@ -786,10 +786,10 @@
     "ground_truth": "blue circle",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. We have a yellow triangle.  \n2. Below the yellow triangle is a red object. So:  \n   - Yellow triangle on top  \n   - Red object directly below it  \n\n3. To the right of the red object is a blue circle. So horizontally:  \n   - Red object \u2026 Blue circle  \n\n4. To the right of the yellow triangle is a green square. So horizontally on the upper row:  \n   - Yellow triangle \u2026 Green square  \n\n5. The red object is directly below the yellow triangle.  \n6. The green square is directly to the right of the yellow triangle.  \n7. Therefore, nothing is stated to be directly below the green square.\n\nResult: nothing",
-    "parsed_prediction": "7",
+    "raw_output": "1. We have a yellow triangle.  \n2. Below the yellow triangle is a red object. So:  \n   - Yellow triangle on top  \n   - Red object directly below it  \n\n3. To the right of the red object is a blue circle. So horizontally:  \n   - Red object \u2026 then to its right \u2026 Blue circle  \n\n4. To the right of the yellow triangle is a green square. So horizontally at the upper level:  \n   - Yellow triangle \u2026 then to its right \u2026 Green square  \n\n5. The red object is directly below the yellow triangle. The green square is directly to the right of the yellow triangle, not above or below it.  \n6. Therefore, nothing is specified as being below the green square.\n\nResult: nothing",
+    "parsed_prediction": "6",
     "correct": false,
-    "latency": 1.8308038711547852
+    "latency": 2.1648271083831787
   },
   {
     "id": "67",
@@ -798,10 +798,10 @@
     "ground_truth": "blue circle",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re told:\n\n1. There is a yellow triangle, and **below it is a red object**.  \n   - So we have: yellow triangle (top), red object (below).\n\n2. **To the right of the red object is a blue circle.**  \n   - Horizontally: red object \u2014 blue circle.\n\n3. **To the right of the blue circle is a green circle.**  \n   - Horizontally: red object \u2014 blue circle \u2014 green circle.\n\nWe are asked: **What is between the green circle and red object?**\n\nLooking at the horizontal order:  \nred object \u2014 **blue circle** \u2014 green circle\n\nThe object between the green circle and the red object is the **blue circle**.\n\nResult: blue circle",
+    "raw_output": "1. We have a red object.  \n2. To the right of the red object is a blue circle.  \n3. To the right of the blue circle is a green circle.  \n\nSo, from left to right: red object \u2192 blue circle \u2192 green circle.  \n\nTherefore, between the green circle and red object is the blue circle.  \n\nResult: circle",
     "parsed_prediction": "3",
     "correct": false,
-    "latency": 2.4075419902801514
+    "latency": 1.7975540161132812
   },
   {
     "id": "68",
@@ -810,10 +810,10 @@
     "ground_truth": "square",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. We have a yellow triangle.  \n2. Below the yellow triangle is a red object (unknown shape).  \n3. To the right of the red object is a blue circle.  \n4. The blue circle is only next to a square.  \n\n\u201cOnly next to a square\u201d means the blue circle can be adjacent to *no shape other than a square*.  \n\nBut we know the blue circle is to the right of the red object, so it is next to the red object.  \nTherefore, for the blue circle to be only next to a square, the red object must itself be a square.  \n\nResult: square",
+    "raw_output": "1. We have a yellow triangle.  \n2. Below the yellow triangle is a red object (unknown shape).  \n3. To the right of the red object is a blue circle.  \n4. The blue circle is only next to a square.  \n\n\u201cOnly next to a square\u201d means the blue circle can be adjacent to exactly one shape, and that shape must be a square.  \n\nBut we are told the blue circle is to the right of the red object, so the blue circle is next to the red object.  \nTherefore, the red object must be the square, otherwise the blue circle would be next to some non-square shape, contradicting the condition.  \n\nSo the red object is a square.  \n\nsquare",
     "parsed_prediction": "4",
     "correct": false,
-    "latency": 2.0713908672332764
+    "latency": 2.5786778926849365
   },
   {
     "id": "69",
@@ -822,10 +822,10 @@
     "ground_truth": "Tom",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Establish initial directions:\n   - Tom faces north.\n   - Lisa faces east.\n   - Mary faces west.\n   - Daniel faces east.\n\n2. Understand \u201cturns left 90 degrees\u201d:\n   - Facing east, a left turn is towards north.\n\n3. So after turning left 90 degrees, Daniel now faces north.\n\n4. Compare with others:\n   - Tom faces north.\n   - Lisa faces east.\n   - Mary faces west.\n\nTom faces the same direction as Daniel now.\n\nResult: Tom",
+    "raw_output": "1. Establish initial directions:\n   - Tom faces north.\n   - Lisa faces east.\n   - Mary faces west.\n   - Daniel faces east.\n\n2. Understand \u201cturns left 90 degrees\u201d:\n   - Facing east, a 90-degree left turn means turning toward the north.\n\n3. So after turning, Daniel faces north.\n\n4. Compare with others:\n   - Tom faces north.\n   - Lisa faces east.\n   - Mary faces west.\n\nTom is facing the same direction as Daniel now.\n\nResult: Tom",
     "parsed_prediction": "4",
     "correct": false,
-    "latency": 2.333730697631836
+    "latency": 1.9052882194519043
   },
   {
     "id": "70",
@@ -834,10 +834,10 @@
     "ground_truth": "Mary",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Set the initial directions:\n   - Tom: north  \n   - Lisa: west  \n   - Mary: west  \n   - Daniel: east  \n\n2. Understand \u201cturns left 270 degrees\u201d:\n   - A left turn is counterclockwise.\n   - 270 degrees left is the same as 3 quarter-turns left, or equivalently a 90-degree right turn.\n\n3. Apply the turn to Daniel:\n   - Starting from east:\n     - 90\u00b0 left: north  \n     - 180\u00b0 left: west  \n     - 270\u00b0 left: south  \n\n   So Daniel now faces south.\n\n4. Compare everyone\u2019s directions to Lisa\u2019s (west):\n   - Tom: north \u2260 west  \n   - Lisa: west = west  \n   - Mary: west = west  \n   - Daniel: south \u2260 west  \n\n5. The people facing the same direction as Lisa are Lisa and Mary.\n\nResult: Mary",
+    "raw_output": "1. Set the initial directions:\n   - Tom faces north.\n   - Lisa faces west.\n   - Mary faces west.\n   - Daniel faces east.\n\n2. Understand Daniel\u2019s turn:\n   - Daniel turns left 270 degrees.\n   - A left turn is counterclockwise.\n   - 270 degrees left is the same as 90 degrees right (because 360 - 270 = 90).\n\n3. Apply the turn to Daniel:\n   - Starting from east, turning 90 degrees right leads to south.\n   - So Daniel now faces south.\n\n4. Compare everyone\u2019s directions to Lisa\u2019s:\n   - Lisa faces west.\n   - Mary faces west.\n   - Tom faces north.\n   - Daniel faces south.\n\n5. The person who looks in the same direction as Lisa is Mary.\n\nMary",
     "parsed_prediction": "5",
     "correct": false,
-    "latency": 2.921564817428589
+    "latency": 1.8380579948425293
   },
   {
     "id": "71",
@@ -846,10 +846,10 @@
     "ground_truth": "Mary",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Establish initial directions:\n   - Tom faces north.\n   - Lisa faces east.\n   - Mary faces west.\n   - Daniel faces east.\n\n2. Understand the turn:\n   - Daniel turns right 180 degrees.\n   - A 180-degree turn (whether right or left) reverses direction.\n   - So from facing east, Daniel will now face west.\n\n3. Compare with others:\n   - Tom: north \u2192 not west.\n   - Lisa: east \u2192 not west.\n   - Mary: west \u2192 same as Daniel now.\n\nMary",
+    "raw_output": "1. Establish initial directions:\n   - Tom faces north.\n   - Lisa faces east.\n   - Mary faces west.\n   - Daniel faces east.\n\n2. Daniel turns right 180 degrees.\n   - A 180-degree turn (whether right or left) reverses direction.\n   - Daniel was facing east, so after turning 180 degrees, he faces west.\n\n3. Compare Daniel\u2019s new direction (west) with the others:\n   - Tom: north \u2192 not the same.\n   - Lisa: east \u2192 not the same.\n   - Mary: west \u2192 same as Daniel.\n\nResult: Mary",
     "parsed_prediction": "3",
     "correct": false,
-    "latency": 2.047940254211426
+    "latency": 1.5148720741271973
   },
   {
     "id": "72",
@@ -858,10 +858,10 @@
     "ground_truth": "Tom",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Tom starts facing north.  \n- Facing north, a 90-degree left turn means he now faces west.  \n- Mary is already facing west.  \n\nSo Tom now looks in the same direction as Mary.  \n\nTom",
+    "raw_output": "Tom starts facing north.  \n- Facing north, a 90-degree **left** turn means he now faces **west**.  \n- Mary is already facing **west**.  \n\nSo Tom now looks in the same direction as Mary.\n\nTom",
     "parsed_prediction": "90",
     "correct": false,
-    "latency": 1.318208932876587
+    "latency": 1.550584077835083
   },
   {
     "id": "73",
@@ -870,10 +870,10 @@
     "ground_truth": "2",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Initial directions:\n   - Tom faces north.\n   - Lisa faces east.\n   - Mary faces west.\n   - Daniel faces east.\n\n2. Daniel turns left 90 degrees.\n   - Facing east, a left turn (counterclockwise) makes him face north.\n\n3. New directions:\n   - Tom: north\n   - Lisa: east\n   - Mary: west\n   - Daniel: north\n\n4. Group by direction:\n   - Facing north: Tom, Daniel (2 people)\n   - Facing east: Lisa (1 person)\n   - Facing west: Mary (1 person)\n\n5. The question asks: \u201cHow many people are facing the same direction now?\u201d  \n   The largest group facing the same direction is the north-facing group: 2 people.\n\nResult: 2",
+    "raw_output": "1. Initial directions:\n   - Tom faces north.\n   - Lisa faces east.\n   - Mary faces west.\n   - Daniel faces east.\n\n2. Daniel turns left 90 degrees.\n   - Facing east and turning left means turning to face north.\n\n3. New directions:\n   - Tom: north\n   - Lisa: east\n   - Mary: west\n   - Daniel: north\n\n4. Count how many face the same direction:\n   - North: Tom, Daniel \u2192 2 people\n   - East: Lisa \u2192 1 person\n   - West: Mary \u2192 1 person\n\nSo the largest group facing the same direction is 2. The answer is 2",
     "parsed_prediction": "2",
     "correct": true,
-    "latency": 2.2346010208129883
+    "latency": 1.7333300113677979
   },
   {
     "id": "74",
@@ -882,10 +882,10 @@
     "ground_truth": "0",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Initial directions:  \n   - Tom: north  \n   - Lisa: east  \n   - Mary: west  \n   - Daniel: east  \n\n2. Daniel turns left 270 degrees.  \n   - A left turn of 90\u00b0 from east \u2192 north  \n   - 180\u00b0 from east \u2192 west  \n   - 270\u00b0 from east \u2192 south  \n\n   So Daniel now faces south.\n\n3. Final directions:  \n   - Tom: north  \n   - Lisa: east  \n   - Mary: west  \n   - Daniel: south  \n\n4. Count how many face each direction:  \n   - North: 1 (Tom)  \n   - East: 1 (Lisa)  \n   - West: 1 (Mary)  \n   - South: 1 (Daniel)  \n\nNo two people share the same direction.\n\n0",
-    "parsed_prediction": "0",
-    "correct": true,
-    "latency": 2.3278989791870117
+    "raw_output": "Tom faces north.  \nLisa faces east.  \nMary faces west.  \nDaniel initially faces east.\n\nTurning left 270 degrees is the same as turning right 90 degrees.  \nFrom east, turning right 90 degrees makes Daniel face south.\n\nNow:\n- Tom: north  \n- Lisa: east  \n- Mary: west  \n- Daniel: south  \n\nNo two people share the same direction, so the number of people facing the same direction is 1",
+    "parsed_prediction": "1",
+    "correct": false,
+    "latency": 1.693871259689331
   },
   {
     "id": "75",
@@ -894,10 +894,10 @@
     "ground_truth": "3",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Initial directions:  \n- Tom: north  \n- Lisa: west  \n- Mary: west  \n- Daniel: east  \n\n2. Daniel turns left 180 degrees.  \nA 180-degree turn reverses direction:  \n- From east \u2192 west  \n\n3. New directions:  \n- Tom: north  \n- Lisa: west  \n- Mary: west  \n- Daniel: west  \n\n4. Count people facing the same direction:  \n- West: Lisa, Mary, Daniel \u2192 3 people  \n- North: Tom \u2192 1 person  \n\nThe largest group facing the same direction is 3.  \n\nResult: 3",
+    "raw_output": "1. Assign initial directions:\n- Tom: north  \n- Lisa: west  \n- Mary: west  \n- Daniel: east  \n\n2. Interpret Daniel\u2019s turn:  \n- \u201cTurns left 180 degrees\u201d means a half-turn, which reverses direction.  \n- Facing east, a 180-degree turn (whether left or right) makes him face west.\n\n3. New directions:\n- Tom: north  \n- Lisa: west  \n- Mary: west  \n- Daniel: west  \n\n4. Count how many face the same direction:\n- West: Lisa, Mary, Daniel \u2192 3 people  \n- North: Tom \u2192 1 person  \n\nThe largest group facing the same direction has size three.\n\nResult: 3",
     "parsed_prediction": "3",
     "correct": true,
-    "latency": 1.816417932510376
+    "latency": 2.130162000656128
   },
   {
     "id": "76",
@@ -906,10 +906,10 @@
     "ground_truth": "2",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Tom faces north.  \nLisa faces east.  \nMary faces west.  \nDaniel faces east.\n\nDaniel turns left 360 degrees: a full turn brings him back to facing east.\n\nSo after the turn:\n- Tom: north  \n- Lisa: east  \n- Mary: west  \n- Daniel: east  \n\nLisa and Daniel both face east, so 2",
+    "raw_output": "1. Initial directions:  \n   - Tom faces **north**  \n   - Lisa faces **east**  \n   - Mary faces **west**  \n   - Daniel faces **east**\n\n2. Daniel turns left 360 degrees.  \n   - A 360-degree turn is a full circle, so he ends up facing the **same direction** he started with: **east**.\n\n3. Final directions:  \n   - Tom: north  \n   - Lisa: east  \n   - Mary: west  \n   - Daniel: east  \n\n4. Count how many people face the same direction:  \n   - Lisa and Daniel both face **east** \u2192 2 people.\n\nResult: **2**",
     "parsed_prediction": "2",
     "correct": true,
-    "latency": 1.422072172164917
+    "latency": 2.546401023864746
   },
   {
     "id": "77",
@@ -918,10 +918,10 @@
     "ground_truth": "Daniel",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re given:\n\n- Tom will be home at **noon** (12:00).\n- Mary will be home at **2pm** (14:00).\n- Daniel will be home at **3pm** (15:00).\n- Lisa **will not** be the last one home.\n\nStep by step:\n\n1. Compare the known times:\n   - Tom: 12:00\n   - Mary: 14:00\n   - Daniel: 15:00  \n   So far, Daniel is the latest among these three.\n\n2. For Lisa to be the last one home, she would need to arrive **after 3pm**.\n\n3. But the statement says Lisa **will not** be the last one home, so she cannot arrive later than Daniel.\n\n4. Therefore, regardless of Lisa\u2019s exact time (as long as it\u2019s not after Daniel), the person who is last must be the one with the latest known time: **Daniel at 3pm**.\n\nResult: Daniel",
-    "parsed_prediction": "3",
+    "raw_output": "We\u2019re given:\n\n- Tom will be home at **noon (12pm)**  \n- Mary will be home at **2pm**  \n- Daniel will be home at **3pm**  \n- Lisa **will not** be the last one home  \n\nStep by step:\n\n1. Compare the known times:\n   - Tom: 12pm  \n   - Mary: 2pm  \n   - Daniel: 3pm  \n\n2. Among these three, **Daniel at 3pm** is the latest time.\n\n3. For Lisa to be last, she would need to arrive **after 3pm**.  \n   But the statement says **Lisa will not be the last one home**, so she cannot arrive later than Daniel in a way that makes her last.\n\n4. Therefore, regardless of Lisa\u2019s exact time (as long as she\u2019s not last), the person who is definitely last among the given times is **Daniel**.\n\nResult: Daniel",
+    "parsed_prediction": "4",
     "correct": false,
-    "latency": 2.890436887741089
+    "latency": 2.0497732162475586
   },
   {
     "id": "78",
@@ -930,10 +930,10 @@
     "ground_truth": "Mary",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We\u2019re told:\n\n- Tom will not be home.  \n- Mary will be home at 2 pm.  \n- Daniel will be home at 1 pm.  \n- Lisa will not be the last one home.\n\nWe compare times:\n\n- Daniel: 1 pm  \n- Mary: 2 pm  \n- Tom: not home (so ignore for \u201clast home\u201d)  \n- Lisa: unknown time, but **not** the last.\n\nSince Mary is home later than Daniel (2 pm vs 1 pm), and Lisa cannot be last, the only person who can be last home is Mary.\n\nResult: Mary",
-    "parsed_prediction": "1",
+    "raw_output": "We\u2019re told:\n\n1. Tom will not be home.  \n2. Mary will be home at 2pm.  \n3. Lisa will not be the last one home.  \n4. Daniel will be home at 1pm.  \n\nReasoning step by step:\n\n- Daniel is home at 1pm.  \n- Mary is home at 2pm.  \n- Tom will not be home at all, so he cannot be last.  \n- Lisa will not be the last one home, so she must arrive before whoever is last.  \n\nAmong the people who *are* home and *can* be last, Mary is the one with the latest given time (2pm), and Lisa is explicitly not last.\n\nTherefore, the last one home is Mary.",
+    "parsed_prediction": "2",
     "correct": false,
-    "latency": 1.890686273574829
+    "latency": 1.748595952987671
   },
   {
     "id": "79",
@@ -942,10 +942,10 @@
     "ground_truth": "Tom",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. List the people and given info:\n   - Mary: 2 pm  \n   - Daniel: 3 pm  \n   - Tom: will be home **after Daniel**  \n   - Lisa: will be the **last** one home\n\n2. Since Lisa is the last one home, her time is after everyone else\u2019s.\n\n3. Tom is after Daniel but before Lisa (because Lisa is last).\n\n4. So the person who will be home after Daniel but before Lisa is Tom.\n\nTom",
+    "raw_output": "1. List the people and given times/order clues:\n   - Mary: at 2pm  \n   - Daniel: at 3pm  \n   - Tom: will be home **after Daniel**  \n   - Lisa: will be the **last** one home\n\n2. Order by time:\n   - Mary is at 2pm \u2192 she is before Daniel.\n   - Daniel is at 3pm.\n   - Tom is after Daniel \u2192 Tom is after 3pm.\n   - Lisa is the last \u2192 Lisa is after everyone, including Tom.\n\n3. So the order is:\n   - Mary \u2192 Daniel \u2192 Tom \u2192 Lisa\n\n4. The person who is home **after Daniel but before Lisa** is Tom.\n\nResult: Tom",
     "parsed_prediction": "4",
     "correct": false,
-    "latency": 2.170116901397705
+    "latency": 2.2311758995056152
   },
   {
     "id": "80",
@@ -954,10 +954,10 @@
     "ground_truth": "Daniel",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We have four people: Tom, Mary, Lisa, Daniel.\n\n1. Tom and Mary will be home at noon.  \n   - So both arrive exactly at noon.\n\n2. Daniel will be home after noon.  \n   - So Daniel arrives later than Tom and Mary.\n\n3. Lisa will not be the last one home.  \n   - So Lisa must arrive before the last person.\n\nTo find who is last:\n- The only person we know for sure arrives after noon is Daniel.\n- Tom and Mary arrive at noon, which is earlier than Daniel.\n- Lisa cannot be last, so she must arrive no later than Daniel, and earlier than or at the same time as him, but not after him.\n\nTherefore, the only possible last person home is Daniel.\n\nResult: Daniel",
+    "raw_output": "We have four people: Tom, Mary, Lisa, Daniel.\n\n1. Tom and Mary will be home at noon.  \n   - So both arrive exactly at noon.\n\n2. Daniel will be home after noon.  \n   - So Daniel arrives later than Tom and Mary.\n\n3. Lisa will not be the last one home.  \n   - So Lisa must arrive before at least one other person.\n\nTo find who is last:\n\n- Tom and Mary: arrive at noon \u2192 not last, because Daniel is after noon.\n- Lisa: explicitly not last.\n- Daniel: the only one specified to arrive after noon, and no one is said to arrive after him.\n\nTherefore, Daniel is last.\n\nResult: Daniel",
     "parsed_prediction": "3",
     "correct": false,
-    "latency": 2.195026159286499
+    "latency": 1.8644599914550781
   },
   {
     "id": "81",
@@ -966,10 +966,10 @@
     "ground_truth": "left",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. The horn is pointing to the **bottom right**.  \n2. For the unicorn to be right side up, the horn should point **upward**.  \n3. To get from bottom right to up, imagine rotating the image:  \n   - A 90\u00b0 **clockwise** turn would move bottom right to **bottom left** \u2013 not correct.  \n   - A 90\u00b0 **counterclockwise** turn would move bottom right to **top right** \u2013 now the horn points up.  \n4. 90\u00b0 is the smallest rotation that works, and it must be **counterclockwise**.\n\ncounterclockwise",
+    "raw_output": "1. The unicorn\u2019s horn is pointing to the **bottom right**.  \n2. For the unicorn to be right side up, the horn should point **upward** (toward the top of the image).  \n3. Imagine rotating the image:\n   - If you rotate **90\u00b0 clockwise**, the bottom right corner moves to the **bottom left** \u2192 horn points bottom left.  \n   - If you rotate **180\u00b0**, the bottom right corner moves to the **top left** \u2192 horn points top left.  \n   - If you rotate **90\u00b0 counterclockwise**, the bottom right corner moves to the **top right** \u2192 horn points top right.  \n4. None of these make the horn point straight up, but the **smallest rotation** that gets the horn closest to upright is **90\u00b0 counterclockwise** (it ends up pointing top right instead of bottom right).\n\nSo the fastest way is to rotate the image **90 degrees counterclockwise**.  \n\ncounterclockwise",
     "parsed_prediction": "90",
     "correct": false,
-    "latency": 2.2421839237213135
+    "latency": 2.31807279586792
   },
   {
     "id": "82",
@@ -978,10 +978,10 @@
     "ground_truth": "right",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. If the giraffe\u2019s feet are pointing to the **top right**, that means the giraffe is rotated so that what should be \u201cdown\u201d (its feet) is now diagonally up-right.\n\n2. To make the giraffe upright, the feet must point **down**.\n\n3. From \u201cup-right\u201d to \u201cdown\u201d is a **90\u00b0 clockwise** turn (a quarter turn to the right).\n\n4. A 90\u00b0 turn is the smallest rotation that makes it upright (compared to 180\u00b0 or 270\u00b0).\n\nResult: **clockwise**",
-    "parsed_prediction": "270",
+    "raw_output": "1. The giraffe\u2019s feet are pointing to the **top right** of the image.  \n2. For the giraffe to be right side up, the feet must point **down**.  \n3. Imagine rotating the image:  \n   - If you rotate **90\u00b0 clockwise**, the top right corner moves to the **bottom right**.  \n   - If you rotate **90\u00b0 counterclockwise**, the top right corner moves to the **top left**.  \n4. We want the feet (currently at top right) to end up at the **bottom**.  \n5. Rotating **180\u00b0** moves the top right corner to the **bottom left**, which is down, making the giraffe upright.  \n6. 180\u00b0 is the smallest rotation that makes the feet point down.\n\nResult: **180\u00b0**",
+    "parsed_prediction": "180",
     "correct": false,
-    "latency": 2.0423009395599365
+    "latency": 2.185401678085327
   },
   {
     "id": "83",
@@ -990,10 +990,10 @@
     "ground_truth": "left",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. If the legs are pointing to the **bottom right**, then the head is pointing to the **top left**.  \n2. For the human to be right side up, the head must point **up**.  \n3. We need to rotate the image so that the current **top-left** direction becomes **top**.  \n4. Rotating the image **45 degrees clockwise** moves the top-left direction to the top.\n\nResult: clockwise",
+    "raw_output": "1. If the legs are pointing to the bottom right, then the head is pointing to the top left.  \n2. For a human to be right side up, the head must point straight up.  \n3. We need to rotate the image so that the current head direction (top left) moves to the top (straight up).  \n4. From top left to top is a 45-degree rotation.  \n5. To decide direction (clockwise vs counterclockwise), note that rotating the legs from bottom right to bottom (straight down) is also 45 degrees.  \n6. From bottom right to bottom is a 45-degree **counterclockwise** rotation.  \n7. Therefore, the fastest way is to rotate the image 45 degrees counterclockwise.\n\ncounterclockwise",
     "parsed_prediction": "45",
     "correct": false,
-    "latency": 1.7167942523956299
+    "latency": 2.237819194793701
   },
   {
     "id": "84",
@@ -1002,10 +1002,10 @@
     "ground_truth": "right",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. If the ant\u2019s legs are pointing to the **top left**, then its head is pointing toward the **bottom right** (since legs are usually behind/under the body).\n\n2. For the ant to be right side up, its head should point **upwards**.\n\n3. To move the head from **bottom right** to **top right**, you rotate the image **90 degrees counterclockwise**.\n\n4. A 90-degree turn is the smallest rotation that makes it upright.\n\ncounterclockwise",
+    "raw_output": "1. If the ant\u2019s legs are pointing to the **top left**, then its head\u2013tail axis is roughly pointing **bottom right** (since legs stick out sideways/down from the body).\n\n2. For the ant to be **right side up**, its legs should point **downward**.\n\n3. Starting from **top left**, the shortest rotation to get the legs pointing **down** is a **90\u00b0 turn clockwise** (top left \u2192 top \u2192 top right \u2192 right \u2192 bottom right \u2192 bottom; the closest is via clockwise).\n\n4. Therefore, you should rotate the image **90 degrees clockwise**.\n\nResult: **clockwise**",
     "parsed_prediction": "90",
     "correct": false,
-    "latency": 2.032835006713867
+    "latency": 2.671699285507202
   },
   {
     "id": "85",
@@ -1014,10 +1014,10 @@
     "ground_truth": "2-2",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Visualize the 3\u00d73 board with coordinates (row-column):\n\n- X at 1-1 (top-left)\n- O at 1-3 (top-right)\n- X at 3-3 (bottom-right)\n\nSo the board looks like:\n\n- Row 1: [ X |   | O ]\n- Row 2: [   |   |   ]\n- Row 3: [   |   | X ]\n\n2. Check X\u2019s potential winning lines:\n\n- X has two marks on the main diagonal: (1,1) and (3,3).\n- If X places another mark at (2,2), that completes the diagonal (1,1)\u2013(2,2)\u2013(3,3) and wins.\n\n3. To block this, O must occupy the center square (2,2).\n\nResult: 2-2",
+    "raw_output": "1. Visualize the board as a 3\u00d73 grid with coordinates (row-column):\n\n- (1-1) = X  \n- (1-3) = O  \n- (3-3) = X  \n\nSo the board looks like:\n\n- Row 1: X | _ | O  \n- Row 2: _ | _ | _  \n- Row 3: _ | _ | X  \n\n2. Check X\u2019s potential winning lines:\n\n- Main diagonal: (1-1), (2-2), (3-3) \u2192 X already has (1-1) and (3-3).  \n  If X gets (2-2), X wins.\n\n3. To block this, O must take the center square:\n\n- That is tile 2-2.\n\nResult: 2-2",
     "parsed_prediction": "-2",
     "correct": false,
-    "latency": 9.580245018005371
+    "latency": 2.0581071376800537
   },
   {
     "id": "86",
@@ -1026,10 +1026,10 @@
     "ground_truth": "no",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Number the rows 1\u20133 from top to bottom, and columns 1\u20133 from left to right.  \nThe notation \u201c1-2\u201d means row 1, column 2, etc.\n\nSo the board is:\n\n- Row 1: (1,1) empty, (1,2) X, (1,3) empty  \n- Row 2: (2,1) empty, (2,2) O, (2,3) empty  \n- Row 3: (3,1) empty, (3,2) X, (3,3) empty  \n\nCheck all possible winning lines for X:\n\n1. Rows:\n   - Row 1: needs X at (1,1) and (1,3) \u2192 2 moves needed.\n   - Row 2: has O in the middle, so X cannot win on this row.\n   - Row 3: needs X at (3,1) and (3,3) \u2192 2 moves needed.\n\n2. Columns:\n   - Column 1: needs X at (1,1) and (3,1) \u2192 2 moves needed.\n   - Column 2: already has X, O, X \u2192 blocked by O, no win possible.\n   - Column 3: needs X at (1,3) and (3,3) \u2192 2 moves needed.\n\n3. Diagonals:\n   - Main diagonal (1,1)-(2,2)-(3,3): center is O, so X cannot win here.\n   - Other diagonal (1,3)-(2,2)-(3,1): center is O, so X cannot win here.\n\nEvery potential line for X either:\n- requires two more X\u2019s (so not winnable in a single move), or  \n- is blocked by O.\n\nTherefore, X cannot win on the next move.  \n\nResult: no",
-    "parsed_prediction": "1",
+    "raw_output": "Number the rows 1\u20133 from top to bottom, and columns 1\u20133 from left to right.  \nA tile \u201c1-2\u201d means row 1, column 2.\n\nSo the board is:\n\n- X at 1-2 (top middle)\n- O at 2-2 (center)\n- X at 3-2 (bottom middle)\n\nThat gives:\n\nRow 1: [ , X, ]  \nRow 2: [ , O, ]  \nRow 3: [ , X, ]\n\nNow check all possible winning lines for X in one move:\n\n1. **Rows**  \n   - Row 1: X has only one mark (at 1-2); needs two more X\u2019s, so cannot win in one move.  \n   - Row 2: only O in the middle; X has none.  \n   - Row 3: same as row 1, only one X (at 3-2).\n\n2. **Columns**  \n   - Column 1: empty; X has no marks there.  \n   - Column 2: X, O, X \u2192 mixed with O, so X cannot complete a three-in-a-row here.  \n   - Column 3: empty; X has no marks there.\n\n3. **Diagonals**  \n   - Main diagonal (1-1, 2-2, 3-3): center is O, so X cannot win there.  \n   - Other diagonal (1-3, 2-2, 3-1): center is O again, so no.\n\nIn every potential line, either X does not already have two marks, or O blocks the line. Therefore, X cannot create three in a row with just one more move.\n\nAnswer: **no**",
+    "parsed_prediction": "-1",
     "correct": false,
-    "latency": 3.296816110610962
+    "latency": 4.091712951660156
   },
   {
     "id": "87",
@@ -1038,10 +1038,10 @@
     "ground_truth": "3-3",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We label the tic-tac-toe board by (row-column), counting rows from top to bottom and columns from left to right.\n\nGiven:\n- X at (3,1)\n- X at (3,2)\n- O at (1,3)\n\nStep 1: Visualize the board\n\nRow 1: [ (1,1) , (1,2) ,  O   ]\nRow 2: [ (2,1) , (2,2) , (2,3) ]\nRow 3: [  X    ,  X    , (3,3) ]\n\nStep 2: Check how X can win\n\nX already has two in a row on the bottom row: positions (3,1) and (3,2).  \nTo win, X needs three in a row, so X should complete the bottom row by placing the next X at (3,3).\n\nStep 3: State the final answer as requested\n\nThe next X needs to be placed in tile 3-3, so the result is 3-3",
+    "raw_output": "We label the tic-tac-toe board by (row-column), counting rows from top to bottom and columns from left to right.\n\nGiven:\n- X at (3-1) \u2192 bottom-left\n- X at (3-2) \u2192 bottom-middle  \nSo the bottom row currently has: X X _\n- O at (1-3) \u2192 top-right\n\nTo win, X should complete a row, column, or diagonal. X already has two in the bottom row (row 3, columns 1 and 2). Placing another X in (3-3) (bottom-right) will complete the bottom row and win the game.\n\nSo the next X must go in tile 3-3. The result is 3-3",
     "parsed_prediction": "-3",
     "correct": false,
-    "latency": 3.12280011177063
+    "latency": 2.1315791606903076
   },
   {
     "id": "88",
@@ -1050,10 +1050,10 @@
     "ground_truth": "X",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Let\u2019s decode the board first.\n\nWe number rows from top to bottom (1\u20133) and columns from left to right (1\u20133).  \nGiven:\n\n- X at (2,2) and (3,2)  \n- O at (1,3) and (3,1)\n\nWrite the board as:\n\nRow 1: (1,1) (1,2) (1,3)  \nRow 2: (2,1) (2,2) (2,3)  \nRow 3: (3,1) (3,2) (3,3)\n\nFill in:\n\n- (2,2) = X  \n- (3,2) = X  \n- (1,3) = O  \n- (3,1) = O  \n\nSo the board is:\n\nRow 1: [ ,  , O]  \nRow 2: [ , X,  ]  \nRow 3: [O, X,  ]\n\nNow check if either player can win on their *next* move.\n\n1. Check if X can win next move:\n   - X currently at (2,2) and (3,2).  \n   - Possible lines involving these:\n     - Column 2: (1,2), (2,2), (3,2). If X plays (1,2), column 2 becomes X X X \u2192 win.\n   - So X has a winning move at (1,2).\n\n2. Check if O can win next move:\n   - O at (1,3) and (3,1).  \n   - Lines:\n     - Diagonal (1,3)-(2,2)-(3,1) is O\u2013X\u2013O, blocked by X.  \n     - No row or column where O already has 2 and the third is empty.\n   - So O has no immediate winning move.\n\nTherefore, the player who can win in the next turn is X.",
+    "raw_output": "Let\u2019s reason it out step by step.\n\n1. Represent the board as a 3\u00d73 grid, with (row-column):\n\n   - X at (2,2) and (3,2)  \n   - O at (1,3) and (3,1)\n\n2. Write the current board:\n\n   Row 1: (1,1) ?, (1,2) ?, (1,3) O  \n   Row 2: (2,1) ?, (2,2) X, (2,3) ?  \n   Row 3: (3,1) O, (3,2) X, (3,3) ?\n\n3. Check if X can win on the next move:\n\n   - X already has (2,2) and (3,2).  \n   - If X plays at (1,2), the second column becomes X at (1,2), (2,2), (3,2) \u2192 three in a column \u2192 X wins immediately.\n\n4. Check if O can win on the next move:\n\n   - O has (1,3) and (3,1).  \n   - To win, O would need a third O in some line where it already has two:\n     - Row 1: only one O at (1,3).  \n     - Row 3: only one O at (3,1).  \n     - Column 1: only one O at (3,1).  \n     - Column 3: only one O at (1,3).  \n     - Diagonals:  \n       - Main diagonal (1,1),(2,2),(3,3): only X at (2,2).  \n       - Other diagonal (1,3),(2,2),(3,1): O at (1,3), O at (3,1), but X already occupies (2,2), so O cannot complete this diagonal.\n   - Therefore, O has no move that creates three in a row immediately.\n\n5. Conclusion: Only X has a winning move on the next turn, by playing at (1,2).\n\nResult: X",
     "parsed_prediction": "2",
     "correct": false,
-    "latency": 3.682426929473877
+    "latency": 5.138881683349609
   },
   {
     "id": "89",
@@ -1062,10 +1062,10 @@
     "ground_truth": "2400",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Each full lap is 400 meters.\n\n2. You run 5 full laps:\n   5 \u00d7 400 = 2000 meters.\n\n3. You then run 60% of the 6th lap:\n   0.60 \u00d7 400 = 240 meters.\n\n4. Total distance covered before walking back:\n   2000 + 240 = 2240 meters.\n\n5. Now you are 240 meters from the starting point along the track (in the direction you were running).  \n   The distance back to the start going forward is:\n   400 \u2212 240 = 160 meters.\n\n6. The shorter way back is 160 meters (forward), not 240 meters (backward).\n\n7. Total distance including walking back:\n   2240 + 160 = 2400 meters.\n\nResult: 2400",
+    "raw_output": "1. Each full lap is 400 m.\n\n2. You run 5 full laps:\n   5 \u00d7 400 = 2000 m\n\n3. You then run 60% of the 6th lap:\n   0.60 \u00d7 400 = 240 m\n\n4. Total distance covered before walking back:\n   2000 + 240 = 2240 m\n\n5. Your position on the track is 240 m from the start along the running direction.  \n   The distance back to the start going forward is:\n   400 \u2212 240 = 160 m\n\n6. You choose the shorter way back, which is 160 m.\n\n7. Total distance including walking back:\n   2240 + 160 = 2400 meters",
     "parsed_prediction": "2400",
     "correct": true,
-    "latency": 3.2356009483337402
+    "latency": 1.9024620056152344
   },
   {
     "id": "90",
@@ -1074,10 +1074,10 @@
     "ground_truth": "2160",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Each full lap is 400 m.\n\n2. You run 5 full laps:\n   \\[\n   5 \\times 400 = 2000 \\text{ m}\n   \\]\n\n3. You then run 20% of the 6th lap:\n   \\[\n   0.20 \\times 400 = 80 \\text{ m}\n   \\]\n\n4. Total distance run before walking back:\n   \\[\n   2000 + 80 = 2080 \\text{ m}\n   \\]\n\n5. You are now 80 m from the starting point along the track. The distance back to the start going forward is:\n   \\[\n   400 - 80 = 320 \\text{ m}\n   \\]\n   The distance back going backward is:\n   \\[\n   80 \\text{ m}\n   \\]\n   The shortest way is 80 m.\n\n6. Total distance covered (running + walking back):\n   \\[\n   2080 + 80 = 2160 \\text{ m}\n   \\]\n\nResult: 2160",
+    "raw_output": "1. Each full lap is 400 meters.\n\n2. You run 5 full laps:\n   \\[\n   5 \\times 400 = 2000 \\text{ meters}\n   \\]\n\n3. You then run 20% of the 6th lap:\n   \\[\n   20\\% \\times 400 = 0.2 \\times 400 = 80 \\text{ meters}\n   \\]\n\n4. Total distance run so far:\n   \\[\n   2000 + 80 = 2080 \\text{ meters}\n   \\]\n\n5. Your position on the track is 80 meters from the starting point along the direction you were running. The distance back to the start:\n   - Going backward: 80 meters\n   - Continuing forward around the track: \\(400 - 80 = 320\\) meters  \n   The shorter distance is 80 meters.\n\n6. You walk back 80 meters to the starting point.\n\n7. Total distance covered (running + walking):\n   \\[\n   2080 + 80 = 2160 \\text{ meters}\n   \\]\n\n2160",
     "parsed_prediction": "2160",
     "correct": true,
-    "latency": 2.4306788444519043
+    "latency": 2.224220037460327
   },
   {
     "id": "91",
@@ -1086,10 +1086,10 @@
     "ground_truth": "2000",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Each lap is 400 meters.\n\n2. Running 5 full laps:\n   \\[\n   5 \\times 400 = 2000 \\text{ meters}\n   \\]\n\n3. You finish 0% of the 6th lap, meaning you stop exactly at the starting point.\n\n4. From that point, the distance to walk back to the starting point (in the shortest direction) is 0 meters, since you are already there.\n\n5. Total distance covered (running + walking back):\n   \\[\n   2000 + 0 = 2000\n   \\]\n\nresult",
+    "raw_output": "1. Each lap is 400 meters.\n\n2. Running 5 full laps:\n   \\[\n   5 \\times 400 = 2000 \\text{ meters}\n   \\]\n\n3. You finish 0% of the 6th lap, meaning you stop exactly at the starting point.\n\n4. From that point, the distance to the starting point (in either direction) is 0 meters, so you don\u2019t need to walk any extra distance.\n\n5. Total distance covered:\n   \\[\n   2000 + 0 = 2000 \\text{ meters}\n   \\]\n\nresult: 2000",
     "parsed_prediction": "2000",
     "correct": true,
-    "latency": 2.4687230587005615
+    "latency": 1.7382171154022217
   },
   {
     "id": "92",
@@ -1098,10 +1098,10 @@
     "ground_truth": "2400",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. Distance for 5 full laps:  \n   \\(5 \\times 400 = 2000\\) meters.\n\n2. Distance for 90% of the 6th lap:  \n   \\(0.9 \\times 400 = 360\\) meters.\n\n3. Total distance when you stop running:  \n   \\(2000 + 360 = 2360\\) meters.\n\n4. Your position on the track after 90% of the 6th lap is 360 m from the start along the running direction.  \n   - Distance back to start if you continue forward: \\(400 - 360 = 40\\) m.  \n   - Distance back to start if you turn around: \\(360\\) m.  \n   The shorter way is to continue forward 40 m.\n\n5. Add the walk-back distance:  \n   \\(2360 + 40 = 2400\\) meters.\n\nresult",
+    "raw_output": "1. Distance for 5 full laps:  \n   \\(5 \\times 400 = 2000\\) meters.\n\n2. Distance covered in the 6th lap (90% of 400m):  \n   \\(0.9 \\times 400 = 360\\) meters.\n\n3. Total distance at the point you stop running:  \n   \\(2000 + 360 = 2360\\) meters.\n\n4. You are now 360m from the start along the track. To get back to the start, you can either:\n   - Continue forward: \\(400 - 360 = 40\\) meters, or  \n   - Go backward: \\(360\\) meters.  \n\n   The shorter way is 40 meters.\n\n5. Total distance including walking back:  \n   \\(2360 + 40 = 2400\\) meters.\n\nresult: 2400",
     "parsed_prediction": "2400",
     "correct": true,
-    "latency": 3.2308707237243652
+    "latency": 3.0309581756591797
   },
   {
     "id": "93",
@@ -1110,10 +1110,10 @@
     "ground_truth": "1",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, list the months of the year in order:\n\n1. January  \n2. February  \n3. March  \n\nSo, the third month is \u201cMarch\u201d.\n\nNow count the vowels in \u201cMarch\u201d (vowels are a, e, i, o, u):\n\n- M \u2192 consonant  \n- a \u2192 vowel  \n- r \u2192 consonant  \n- c \u2192 consonant  \n- h \u2192 consonant  \n\nThere is 1 vowel in \u201cMarch\u201d.\n\n1",
-    "parsed_prediction": "1",
-    "correct": true,
-    "latency": 1.5349798202514648
+    "raw_output": "First, list the months of the year in order:\n\n1. January  \n2. February  \n3. March  \n\nThe third month is **March**.\n\nNow count the vowels in \"March\":\n\n- M \u2013 consonant  \n- a \u2013 vowel  \n- r \u2013 consonant  \n- c \u2013 consonant  \n- h \u2013 consonant  \n\nThere is only **one** vowel in \"March\".\n\nAnswer: **one**",
+    "parsed_prediction": "3",
+    "correct": false,
+    "latency": 2.1864678859710693
   },
   {
     "id": "94",
@@ -1122,10 +1122,10 @@
     "ground_truth": "2",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "We look only at the first half of the year:  \nJanuary, February, March, April, May, June.\n\nNow count how many of these start with the letter **J**:  \n- January \u2192 starts with J  \n- February \u2192 does not  \n- March \u2192 does not  \n- April \u2192 does not  \n- May \u2192 does not  \n- June \u2192 starts with J  \n\nSo there are 2 months that start with J.\n\nResult: 2",
+    "raw_output": "We\u2019re asked: in the first half of the year (January to June), how many month names start with the letter \u201cJ\u201d?\n\nList the first six months:\n1. January  \n2. February  \n3. March  \n4. April  \n5. May  \n6. June  \n\nNow count those starting with \u201cJ\u201d:\n- January \u2192 starts with J  \n- June \u2192 starts with J  \n\nThat makes 2 months.\n\nAnswer: 2",
     "parsed_prediction": "2",
     "correct": true,
-    "latency": 1.6151440143585205
+    "latency": 1.720078706741333
   },
   {
     "id": "95",
@@ -1134,10 +1134,10 @@
     "ground_truth": "5",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Christmas is in the month **December**.  \nNow count the consonants in \"December\":\n\n- D \u2192 consonant  \n- e \u2192 vowel  \n- c \u2192 consonant  \n- e \u2192 vowel  \n- m \u2192 consonant  \n- b \u2192 consonant  \n- e \u2192 vowel  \n- r \u2192 consonant  \n\nConsonants: D, c, m, b, r \u2192 5\n\n5",
+    "raw_output": "Christmas is in the month of **December**.  \nNow count the consonants in \"December\":\n\n- D \u2192 consonant  \n- e \u2192 vowel  \n- c \u2192 consonant  \n- e \u2192 vowel  \n- m \u2192 consonant  \n- b \u2192 consonant  \n- e \u2192 vowel  \n- r \u2192 consonant  \n\nConsonants: D, c, m, b, r \u2192 5  \n\n5",
     "parsed_prediction": "5",
     "correct": true,
-    "latency": 1.7393920421600342
+    "latency": 1.537160873413086
   },
   {
     "id": "96",
@@ -1146,10 +1146,10 @@
     "ground_truth": "4",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, list all 12 months:\n\n1. January  \n2. February  \n3. March  \n4. April  \n5. May  \n6. June  \n7. July  \n8. August  \n9. September  \n10. October  \n11. November  \n12. December  \n\nNow check which ones end with the letter \u201cy\u201d:\n\n- Januar**y**  \n- Februar**y**  \n- Ma**y**  \n- Jul**y**\n\nCount them: 4 months end with \u201cy\u201d.\n\nAnswer: 4",
+    "raw_output": "First, list all 12 months:\n\n1. January  \n2. February  \n3. March  \n4. April  \n5. May  \n6. June  \n7. July  \n8. August  \n9. September  \n10. October  \n11. November  \n12. December  \n\nNow check which ones end with the letter \u201cy\u201d:\n\n- Januar**y** \u2192 yes  \n- Februar**y** \u2192 yes  \n- Ma**y** \u2192 yes  \n- Jul**y** \u2192 yes  \n\nCount them: 4 months end with \u201cy\u201d.\n\nResult: 4",
     "parsed_prediction": "4",
     "correct": true,
-    "latency": 1.7100720405578613
+    "latency": 1.8542001247406006
   },
   {
     "id": "97",
@@ -1158,10 +1158,10 @@
     "ground_truth": "7",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "Start with the standard renting duration:  \n- Standard duration: 4 weeks.\n\nYou can extend it twice, each time by 2 weeks:  \n- First extension: 2 weeks.  \n- Second extension: 2 weeks.  \n\nTotal possible duration if you used all extensions and kept it until the final due date:  \n- 4 (standard) + 2 (first extension) + 2 (second extension) = 8 weeks.\n\nBut you returned the book one week before the final due date:  \n- 8 weeks \u2212 1 week = 7 weeks.\n\nResult: 7",
+    "raw_output": "1. The standard renting duration is 4 weeks.  \n2. You can extend it twice, each extension is 2 weeks.  \n3. Total possible time with both extensions:  \n   4 weeks + 2 weeks + 2 weeks = 8 weeks.  \n4. You returned the book 1 week before the final due date.  \n5. So you had the book:  \n   8 weeks \u2212 1 week = 7 weeks.  \n\nResult: 7",
     "parsed_prediction": "7",
     "correct": true,
-    "latency": 1.688499927520752
+    "latency": 1.5546879768371582
   },
   {
     "id": "98",
@@ -1170,10 +1170,10 @@
     "ground_truth": "6",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "First, note the standard renting duration:\n- Standard duration = 4 weeks\n\nYou are allowed to extend the rental twice, each extension is:\n- Each extension = 2 weeks\n\nIn this case, you extended it once:\n- Number of extensions used = 1\n- Total extension time = 1 \u00d7 2 weeks = 2 weeks\n\nNow add the extension time to the standard duration:\n- Total time = 4 weeks + 2 weeks = 6 weeks\n\nResult: 6",
+    "raw_output": "First, note the standard renting duration:\n- Standard duration: 4 weeks.\n\nYou are allowed to extend the rental twice, each extension adding 2 weeks:\n- Each extension: 2 weeks.\n- You extended it once, so you used 1 extension.\n\nNow calculate the total time:\n- Original 4 weeks + 1 extension of 2 weeks  \n= 4 + 2  \n= 6 weeks.\n\nResult: 6",
     "parsed_prediction": "6",
     "correct": true,
-    "latency": 1.7805249691009521
+    "latency": 1.706404209136963
   },
   {
     "id": "99",
@@ -1185,7 +1185,7 @@
     "raw_output": "1. The standard renting duration is 4 weeks.  \n2. I did not extend the renting duration, so it stayed 4 weeks.  \n3. I returned the book one week before I had to.  \n4. So I had the book for 4 \u2212 1 = 3 weeks.  \n\nResult: 3",
     "parsed_prediction": "3",
     "correct": true,
-    "latency": 1.6000192165374756
+    "latency": 2.46152663230896
   },
   {
     "id": "100",
@@ -1194,9 +1194,9 @@
     "ground_truth": "6",
     "model": "gpt-5.1",
     "strategy": "cot",
-    "raw_output": "1. The standard renting duration is 4 weeks.  \n2. You can extend it twice, each extension is 2 weeks.  \n3. Total possible time if fully used:  \n   - Start: 4 weeks  \n   - First extension: +2 weeks \u2192 6 weeks  \n   - Second extension: +2 weeks \u2192 8 weeks  \n4. You returned the book 2 weeks before the final due date.  \n5. So you had it: 8 weeks \u2212 2 weeks = 6 weeks  \n\nResult: 6",
+    "raw_output": "1. The standard renting duration is 4 weeks.  \n2. You can extend it twice, each extension is 2 weeks.  \n3. Total possible time if fully used:  \n   - Start: 4 weeks  \n   - First extension: +2 weeks \u2192 6 weeks  \n   - Second extension: +2 weeks \u2192 8 weeks  \n4. You returned the book 2 weeks before the final due date.  \n5. So you had the book: 8 weeks \u2212 2 weeks = 6 weeks  \n\nResult: 6",
     "parsed_prediction": "6",
     "correct": true,
-    "latency": 1.7065837383270264
+    "latency": 1.5057170391082764
   }
 ]
