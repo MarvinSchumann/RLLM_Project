@@ -30,5 +30,11 @@
       "type": "countConsonants",
       "question": "Count the Consonants in the string: hgrwopjuia",
       "answer": "6"
+    },
+    {
+      "id": "6",
+      "type": "angular",
+      "question": "I have an image of a human, the legs are pointing to the bottom right. What direction do I have to turn the image for the human to be right side up the fastest?",
+      "answer": "left"
     }
 ]

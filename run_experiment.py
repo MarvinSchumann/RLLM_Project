@@ -9,10 +9,10 @@ from openai import OpenAI
 # CONFIG
 # ----------------------------------
 
-MODEL = "gpt-5.1"
+MODEL = "gpt-4o-mini"
 STRATEGY = "self_consistency"   # options: "direct", "cot", "self_consistency"
 DATASET_PATH = "data/dataset.json"
-RESULT_PATH = "results_self_consistency-gpt-5.1.json"
+RESULT_PATH = "results/results_self_consistency-gpt-4o-mini.json"
 
 TEMPERATURE = 0
 SELF_CONSISTENCY_RUNS = 10
@@ -40,7 +40,7 @@ Solve the following reasoning task step by step.
 Question:
 {question}
 
-Lets think step by step. Make sure the last word is the result. 
+Lets think step by step. Make sure the last word is the result. If the result is a number, dont write it as the word, but give just the number! 
 """
     else: raise ValueError("Unknown strategy")
 #--------------------------------------------------
@@ -66,14 +66,22 @@ def ask_model(prompt):
 def parse_prediction(text):
     if text is None:
         return None
-    
+
     text = text.strip()
 
-    #in case the AI answers with more than the final word, we strip all other words:
-    numbers = re.findall(r"-?\d+",text)
-    if len(numbers) > 0:
-        return numbers[-1]
-    return text
+    if not text:
+        return None
+
+    # letzte Zeile nehmen
+    last_line = text.split("\n")[-1].strip()
+
+    # letztes Wort extrahieren
+    tokens = last_line.split()
+
+    if len(tokens) == 0:
+        return None
+
+    return tokens[-1]
 
 #-------------------------------------------------------------
 

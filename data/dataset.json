@@ -522,25 +522,25 @@
   {
     "id": "81",
     "type": "angular",
-    "question": "I have an image of a unicorn, the horn is pointing to the bottom right. What direction do I have to turn the image for the unicorn to be right side up the fastest?",
+    "question": "(left or right)- I have an image of a unicorn, the horn is pointing to the bottom right. What direction do I have to turn the image for the unicorn to be right side up the fastest?",
     "answer": "left"
   },
   {
     "id": "82",
     "type": "angular",
-    "question": "I have an image of a giraffe, the feet are pointing to the top right. What direction do I have to turn the image for the giraffe to be right side up the fastest?",
+    "question": "(left or right)- I have an image of a giraffe, the feet are pointing to the top right. What direction do I have to turn the image for the giraffe to be right side up the fastest?",
     "answer": "right"
   },
   {
     "id": "83",
     "type": "angular",
-    "question": "I have an image of a human, the legs are pointing to the bottom right. What direction do I have to turn the image for the human to be right side up the fastest?",
+    "question": "(left or right)- I have an image of a human, the legs are pointing to the bottom right. What direction do I have to turn the image for the human to be right side up the fastest?",
     "answer": "left"
   },
   {
     "id": "84",
     "type": "angular",
-    "question": "I have an image of an ant, the legs are pointing to the top left. What direction do I have to turn the image for the ant to be right side up the fastest?",
+    "question": "(left or right)- I have an image of an ant, the legs are pointing to the top left. What direction do I have to turn the image for the ant to be right side up the fastest?",
     "answer": "right"
   },
 
