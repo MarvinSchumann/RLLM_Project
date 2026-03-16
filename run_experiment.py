@@ -4,15 +4,25 @@ import re
 import os
 from collections import Counter
 from openai import OpenAI
+import argparse
 
 # ----------------------------------
 # CONFIG
 # ----------------------------------
 
-MODEL = "gpt-4o-mini"
-STRATEGY = "self_consistency"   # options: "direct", "cot", "self_consistency"
+parser = argparse.ArgumentParser()
+
+parser.add_argument("--model", type=str, required=True)
+parser.add_argument("--strategy", type=str, required=True)
+parser.add_argument("--output", type=str, required=True)
+
+args = parser.parse_args()
+
+MODEL = args.model
+STRATEGY = args.strategy
+RESULT_PATH = args.output
+
 DATASET_PATH = "data/dataset.json"
-RESULT_PATH = "results/results_self_consistency-gpt-4o-mini.json"
 
 TEMPERATURE = 0
 SELF_CONSISTENCY_RUNS = 10
@@ -30,17 +40,24 @@ Solve the following task.
 Question:
 {question}
 
-Answer with only the final answer.str
+Answer only with the final answer!
+If the result is a number, dont write it as the word, but give just the number!
+Dont set dots or any other characters before or after the answer if it is not nessesary (like brackets for example), since it will be parsed.
+If the answer contains 2 words like 'red triangle': write 'red_triangle'
+
 """
     
     elif strategy == "cot":
         return f"""
-Solve the following reasoning task step by step.
+Solve the following reasoning task step by step. The result must be the last word of your answer.
+If the result is a number, dont write it as the word, but give just the number!
+Dont set dots or any other characters before or after the answer if it is not nessesary (like brackets for example), since it will be parsed.
+If the answer contains 2 words like 'red triangle': write 'red_triangle'
 
 Question:
 {question}
 
-Lets think step by step. Make sure the last word is the result. If the result is a number, dont write it as the word, but give just the number! 
+argue step by step!
 """
     else: raise ValueError("Unknown strategy")
 #--------------------------------------------------
@@ -63,6 +80,8 @@ def ask_model(prompt):
 # ----------------------------------
 
 #Parse Prediction
+import re
+
 def parse_prediction(text):
     if text is None:
         return None
@@ -72,16 +91,19 @@ def parse_prediction(text):
     if not text:
         return None
 
-    # letzte Zeile nehmen
-    last_line = text.split("\n")[-1].strip()
+    # 1. zuerst versuchen { ... } zu extrahieren
+    match = re.search(r"\{[^}]+\}", text)
+    if match:
+        return match.group(0)
 
-    # letztes Wort extrahieren
+    # 2. sonst letztes Wort
+    last_line = text.split("\n")[-1].strip()
     tokens = last_line.split()
 
     if len(tokens) == 0:
         return None
 
-    return tokens[-1]
+    return tokens[-1].strip(".,")
 
 #-------------------------------------------------------------
 
@@ -100,7 +122,7 @@ def ask_self_consistency(question, runs=SELF_CONSISTENCY_RUNS):
             print(f"API error in self-consistency run {i+1}: {e}")
             raw_output = None
 
-        prediction = parse_prediction(raw_output)
+        prediction = parse_prediction(raw_output).lower()
 
         raw_outputs.append(raw_output)
         predictions.append(prediction)
@@ -163,11 +185,11 @@ def run():
             time.sleep(0.2)
 
         latency = time.time() - start
-        correct = prediction == answer
+        correct = normalize_answer(prediction)== normalize_answer(answer)
 
         result = {
             "id": task["id"],
-            "task_type": task.get("task_type"),
+            "task_type": task.get("type"),
             "question": question,
             "ground_truth": answer,
             "model": MODEL,
@@ -194,6 +216,20 @@ def run():
         json.dump(results, f, indent=2)
 
     print(f"Done! Results saved to: {RESULT_PATH}")
+
+def normalize_answer(x):
+    if x is None:
+        return None
+
+    x = str(x).strip().lower()
+
+    # geschweifte Klammern entfernen
+    x = x.replace("{", "").replace("}", "")
+
+    # Leerzeichen entfernen
+    x = x.replace(" ", "")
+
+    return x
 
 # Run
 

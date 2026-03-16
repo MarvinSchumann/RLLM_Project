@@ -106,25 +106,25 @@
   {
     "id": "17",
     "type": "pathFinding",
-    "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,B),(B,D),(B,E),(C,E)). Give the sequence of nodes to get from B to C in the format {node1, node2, node3, ...}",
+    "question": "(answer should look like this example: {E, D, F}) - Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,B),(B,D),(B,E),(C,E)). Give the sequence of nodes to get from B to C in the format {node1, node2, node3, ...}",
     "answer": "{B, E, C}"
   },
   {
     "id": "18",
     "type": "pathFinding",
-    "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,B),(B,C),(C,D),(D,E)). Give the sequence of nodes to get from A to D in the format {node1, node2, node3, ...}",
+    "question": "(answer should look like this example: {E, D, F}) - Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,B),(B,C),(C,D),(D,E)). Give the sequence of nodes to get from A to D in the format {node1, node2, node3, ...}",
     "answer": "{A, B, C, D}"
   },
   {
     "id": "19",
     "type": "pathFinding",
-    "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,A),(A,D),(B,E),(D,E)). Give the sequence of nodes to get from A to B in the format {node1, node2, node3, ...}",
+    "question": "(answer should look like this example: {E, D, F}) - Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,A),(A,D),(B,E),(D,E)). Give the sequence of nodes to get from A to B in the format {node1, node2, node3, ...}",
     "answer": "{A, D, E, B}"
   },
   {
     "id": "20",
     "type": "pathFinding",
-    "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,B),(A,C),(A,D),(A,E)). Give the sequence of nodes to get from A to C in the format {node1, node2, node3, ...}",
+    "question": "(answer should look like this example: {E, D, F}) - Imagine a bidirectional graph with the nodes (A,B,C,D,E) and the edges ((A,B),(A,C),(A,D),(A,E)). Give the sequence of nodes to get from A to C in the format {node1, node2, node3, ...}",
     "answer": "{A, C}"
   },
 
@@ -132,25 +132,25 @@
   {
     "id": "21",
     "type": "doesPathExist",
-    "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,B),(A,D),(B,D),(C,E),(D,F),(F,G)). Does a Path from A to E exist?",
+    "question": "(yes or no) - Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,B),(A,D),(B,D),(C,E),(D,F),(F,G)). Does a Path from A to E exist?",
     "answer": "no"
   },
   {
     "id": "22",
     "type": "doesPathExist",
-    "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,C),(A,E),(B,E),(C,G),(D,F),(D,G)). Does a Path from A to F exist?",
+    "question": "(yes or no) - Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,C),(A,E),(B,E),(C,G),(D,F),(D,G)). Does a Path from A to F exist?",
     "answer": "yes"
   },
   {
     "id": "23",
     "type": "doesPathExist",
-    "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,C),(A,D),(C,D),(C,E),(D,G),(F,G)). Does a Path from E to B exist?",
+    "question": "(yes or no) - Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,C),(A,D),(C,D),(C,E),(D,G),(F,G)). Does a Path from E to B exist?",
     "answer": "no"
   },
   {
     "id": "24",
     "type": "doesPathExist",
-    "question": "Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,C),(B,C),(C,D),(C,E),(D,F)). Does a Path from B to F exist?",
+    "question": "(yes or no) - Imagine a bidirectional graph with the nodes (A,B,C,D,E,F,G) and the edges ((A,C),(B,C),(C,D),(C,E),(D,F)). Does a Path from B to F exist?",
     "answer": "yes"
   },
 
@@ -359,7 +359,7 @@
     "id": "56",
     "type": "hiddenWords",
     "question": "What word is hidden here? : SCCCHCOCOCL",
-    "answer": "HIDDEN"
+    "answer": "SCHOOL"
   },
 
 
@@ -419,19 +419,19 @@
     "id": "65",
     "type": "shapePosition",
     "question": "There is a yellow triangle, below it is a red object. To the right of the red object is a blue circle. What is above the red object?",
-    "answer": "yellow triangle"
+    "answer": "yellow_triangle"
   },
   {
     "id": "66",
     "type": "shapePosition",
     "question": "There is a yellow triangle, below it is a red object. To the right of the red object is a blue circle. To the right of the yellow triangle is a green square. What is below the green square?",
-    "answer": "blue circle"
+    "answer": "blue_circle"
   },
   {
     "id": "67",
     "type": "shapePosition",
     "question": "There is a yellow triangle, below it is a red object. To the right of the red object is a blue circle. To the right of the blue circle is a green circle. What is between the green circle and red object?",
-    "answer": "blue circle"
+    "answer": "blue_circle"
   },
   {
     "id": "68",
